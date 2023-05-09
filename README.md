@@ -24,7 +24,7 @@ To install this project, follow these steps:
 1. Clone the repository to your local machine:
 
     ```
-    git clone https://github.com/....
+    git clone https://github.com/your-github-name/dsouza_mindset
     ```
 
 2. Change into the project directory:
