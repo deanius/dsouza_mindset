@@ -29,11 +29,7 @@ const Home = () => {
   return (
     <Layout title="The Dean Dsouza Mindset - Home">
       <h1>{data?.pages?.edges[0].node.title}</h1>
-      <ReactQuill
-        value={data?.pages?.edges[0].node.content}
-        readOnly={true}
-        modules={{ toolbar: false }}
-      />
+  
       <Button name="View Blog" location="/blog" />
     </Layout>
   );
