@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Layout from "../components/Layout/Layout";
+import InProgress from "../components/Common/InProgress";
 
 const Support = () => {
   return (
-    <div>Support</div>
-  )
-}
+    <Layout title="The Dean Dsouza Mindset - Support">
+      <h1>Support</h1>
+      <InProgress/>
+    </Layout>
+  );
+};
 
-export default Support
+export default Support;

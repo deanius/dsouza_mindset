@@ -1,3 +1,13 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --bg-color: #1d1d1d;
+  --text-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +16,19 @@
 
 body {
   font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: var(--heading-color);
+}
+
+p {
+  line-height: 1.5;
+}
+

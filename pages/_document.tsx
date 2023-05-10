@@ -1,13 +1,29 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html className="no-js">
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              const darkMode =
+                window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches;
+              if (darkMode) {
+                document.body.classList.add('dark-mode');
+              }
+            `,
+            }}
+          />
+        </body>
+      </Html>
+    );
+  }
 }
+
+export default MyDocument;
