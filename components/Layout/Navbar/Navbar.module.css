@@ -10,7 +10,6 @@
 
 @media (max-width: 768px) {
   .navList {
-    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;

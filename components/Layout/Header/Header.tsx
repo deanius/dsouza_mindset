@@ -12,7 +12,7 @@ const Header = () => {
       <Link className={styles.logo} href="/">
         The Dean Dsouza Mindset
       </Link>
-      <Navbar  />
+      {!isMenuOpen && <Navbar />}
       <div
         className={styles.hamburger}
         onClick={() => {
