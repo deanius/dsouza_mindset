@@ -5,14 +5,14 @@ import { useQuery, gql } from "@apollo/client";
 
 const POSTS_QUERY = gql`
   query {
-    posts {
-      nodes {
-        id
-        title
-        content
-      }
+  posts(where: {categoryName: "Blog"}) {
+    nodes {
+      id
+      content
+      title
     }
   }
+}
 `;
 
 const Blog = () => {
