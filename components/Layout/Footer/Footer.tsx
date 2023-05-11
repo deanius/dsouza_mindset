@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div>
         <h3>The Dean Dsouza Mindset</h3>
-        <p>Copyright © {new Date().getFullYear()}</p>
+        <p>Copyright © {new Date().getFullYear()}. All Rights Reserved</p>
       </div>
       <div>
         <h3>Links</h3>

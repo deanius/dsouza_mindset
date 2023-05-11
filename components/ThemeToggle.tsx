@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const handleToggle = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle("dark-mode");
   };
 
   return (
-    <button onClick={handleToggle}>
-      {darkMode ? 'Dark Mode' : 'Light Mode'}
+    <button className="themeToggle" onClick={handleToggle}>
+      {darkMode ? "Dark Mode" : "Light Mode"}
     </button>
   );
 };

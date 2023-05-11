@@ -19,20 +19,20 @@ const POSTS_QUERY = gql`
   }
 `;
 
-const Support = () => {
+const About = () => {
   const { loading, error, data } = useQuery(POSTS_QUERY, { client });
 
   return (
-    <Layout title="The Dean Dsouza Mindset - Support">
-      <h1>Support</h1>
+    <Layout title="The Dean Dsouza Mindset - About">
+      <h1>About</h1>
       <ReactQuill
-        value={data?.pages?.edges[0].node.content}
+        value={data?.pages?.edges[2].node.content}
         readOnly={true}
         modules={{ toolbar: false }}
       />
-      <Button name="Get in Touch" location="/contact" />
+      <Button name="View Blog" location="/blog" />
     </Layout>
   );
 };
 
-export default Support;
+export default About;

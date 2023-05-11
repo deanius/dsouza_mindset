@@ -1,0 +1,9 @@
+.button {
+    padding: 0.8rem 2rem;
+    background: unset;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+}

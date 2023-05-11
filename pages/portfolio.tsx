@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
-import InProgress from "../components/Common/InProgress";
+import InProgress from "../components/Common/InProgress/InProgress";
 
 const Portfolio = () => {
   return (

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout/Layout";
 import Button from "../components/Common/Buttons/Button";
 import client from "../apolloclient";
 import { useQuery, gql } from "@apollo/client";
-import ReactQuill from "react-quill";
+
+const ReactQuill = typeof window === 'object' ? require('react-quill') : () => false;
 
 const POSTS_QUERY = gql`
   query {
@@ -20,25 +21,25 @@ const POSTS_QUERY = gql`
 
 const Home = () => {
   const { loading, error, data } = useQuery(POSTS_QUERY, { client });
-  console.log(data?.pages?.edges[1].node.title);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
   return (
     <Layout title="The Dean Dsouza Mindset - Home">
-      <h1>{data?.pages?.edges[1].node.title}</h1>
-      <ReactQuill
-        value={data?.pages?.edges[1].node.content}
-        readOnly={true}
-        modules={{ toolbar: false }}
-      />
-      <Button name="View Blog" location="/blog" />
-      <ReactQuill
-        value={data?.pages?.edges[0].node.content}
-        readOnly={true}
-        modules={{ toolbar: false }}
-      />
+      <div className="heroContain">
+        <h1>{data?.pages?.edges[2].node.title}</h1>
+        <p>Mission statement. Currently static and will replace.</p>
+        <div className="heroBtnContain">
+          <Button name="About Me" location="/about" />
+          <Button name="View Blog" location="/blog" />
+        </div>
+      </div>
+        <ReactQuill
+          value={data?.pages?.edges[1].node.content}
+          readOnly={true}
+          modules={{ toolbar: false }}
+        />
     </Layout>
   );
 };

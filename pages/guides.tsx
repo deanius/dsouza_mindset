@@ -2,7 +2,8 @@ import React from "react";
 import Layout from "../components/Layout/Layout";
 import client from "../apolloclient";
 import { useQuery, gql } from "@apollo/client";
-import ReactQuill from "react-quill";
+import styles from "../components/Common/Posts/Posts.module.css";
+import Post from "../components/Common/Posts/Post/Post";
 
 const POSTS_QUERY = gql`
   query {
@@ -10,7 +11,14 @@ const POSTS_QUERY = gql`
     nodes {
       id
       content
+      excerpt
+      featuredImage {
+          node {
+            sourceUrl
+          }
+        }
       title
+      date
     }
   }
 }
@@ -24,12 +32,18 @@ const Guides = () => {
   return (
     <Layout title="The Dean Dsouza Mindset - Guides">
       <h1>Guides</h1>
-      {data.posts.nodes.map((post: any) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
-        </div>
-      ))}    
+      <p>A treasure trove of life advice.</p>
+      <div className={styles.posts}>
+        {data.posts.nodes.map((post: any) => (
+          <Post
+            key={post.id}
+            title={post.title}
+            date={post.date}
+            content={post.excerpt}
+            img={post.featuredImage?.node?.sourceUrl}
+          />
+        ))}
+      </div>
     </Layout>
   );
 };

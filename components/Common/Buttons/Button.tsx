@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import styles from "./Button.module.css";
 
 type ButtonProps = {
   name: string | any;
@@ -8,7 +8,7 @@ type ButtonProps = {
 
 const Button = ({ name, location }: ButtonProps) => {
   return (
-    <button>
+    <button className={styles.button}>
       <Link href={location}>{name}</Link>
     </button>
   );

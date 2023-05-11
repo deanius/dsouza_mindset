@@ -1,0 +1,35 @@
+.posts {
+    margin-top: 2rem;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.post img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.postContent {
+    padding: 0 1rem;
+    width: 50%;
+}
+
+.titleContain {
+    display: flex;
+    align-items: center;
+}
+
+.titleContain h3 {
+    width: 160px;
+    margin-left: 40px;
+    white-space: nowrap;
+}

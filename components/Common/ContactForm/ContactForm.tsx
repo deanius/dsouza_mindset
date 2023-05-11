@@ -48,36 +48,41 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
   return (
     <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <label className={styles.label}>First Name</label>
-        <input
-          type="text"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          className={styles.input}
-        />
+        <div className={styles.inputField}>
+          <label className={styles.label}>First Name</label>
+          <input
+            type="text"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+        </div>
 
-        <label className={styles.label}>Last Name</label>
-        <input
-          type="text"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          className={styles.input}
-        />
-
-        <label className={styles.label}>Email</label>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className={styles.input}
-        />
-
-        <label className={styles.label}>Message</label>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className={styles.input}
-        ></textarea>
+        <div className={styles.inputField}>
+          <label className={styles.label}>Last Name</label>
+          <input
+            type="text"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className={styles.input}
+          />
+        </div>
+        <div className={styles.inputField}>
+          <label className={styles.label}>Email</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={styles.input}
+          />
+        </div>
+        <div className={styles.inputField}>
+          <label className={styles.label}>Message</label>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className={styles.input}
+          ></textarea>
+        </div>
 
         <div className={styles.radio}>
           <input
