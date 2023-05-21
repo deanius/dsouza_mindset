@@ -46,63 +46,48 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
   const [subscribed, setSubscribed] = useState(false);
 
   return (
-    <div className={styles.container}>
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.inputField}>
-          <label className={styles.label}>First Name</label>
-          <input
-            type="text"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-        </div>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <h3>Drop a message</h3>
+      <div className={styles.inputField}>
+        <input
+          required
+          type="text"
+          placeholder="First Name"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+      </div>
 
-        <div className={styles.inputField}>
-          <label className={styles.label}>Last Name</label>
-          <input
-            type="text"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            className={styles.input}
-          />
-        </div>
-        <div className={styles.inputField}>
-          <label className={styles.label}>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={styles.input}
-          />
-        </div>
-        <div className={styles.inputField}>
-          <label className={styles.label}>Message</label>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            className={styles.input}
-          ></textarea>
-        </div>
-
-        <div className={styles.radio}>
-          <input
-            type="radio"
-            id="subscribe"
-            name="subscription"
-            checked={subscribed}
-            onChange={() => setSubscribed(!subscribed)}
-            className={styles.radioInput}
-          />
-          <label htmlFor="subscribe" className={styles.radioLabel}>
-            Subscribe to newsletter
-          </label>
-        </div>
-
-        <button type="submit" className={styles.submitButton}>
-          Submit
-        </button>
-      </form>
-    </div>
+      <div className={styles.inputField}>
+        <input
+          required
+          type="text"
+          placeholder="Last Name"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          className={styles.input}
+        />
+      </div>
+      <div className={styles.inputField}>
+        <input
+          required
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={styles.input}
+        />
+      </div>
+      <div className={styles.inputField}>
+        <textarea
+          required
+          placeholder="Enter Your Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          className={styles.input}
+        ></textarea>
+      </div>
+    </form>
   );
 };
 

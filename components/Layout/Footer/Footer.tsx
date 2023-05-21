@@ -1,7 +1,18 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
+
+  const isActive = (path: any) => {
+    if (router.pathname === path) {
+      return { opacity: 0.3 }; // Set the active link color
+    } else {
+      null;
+    }
+  };
+
   return (
     <footer className={styles.footer}>
       <div>
@@ -9,22 +20,54 @@ const Footer = () => {
         <p>Copyright © {new Date().getFullYear()}. All Rights Reserved</p>
       </div>
       <div>
-        <h3>Links</h3>
         <ul>
-          <li>
-            <Link href="/blog">Blog</Link>
+        <li>
+            <Link
+              style={isActive("/about")}
+              href="/about"
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/guides">Guides</Link>
+            <Link
+              style={isActive("/blog")}
+              href="/blog"
+            >
+              Blog
+            </Link>
           </li>
           <li>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link
+              style={isActive("/guides")}
+              href="/guides"
+            >
+              Guides
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link
+              style={isActive("/portfolio")}
+              href="/portfolio"
+            >
+              Portfolio
+            </Link>
           </li>
           <li>
-            <Link href="/support">Support</Link>
+            <Link
+              style={isActive("/contact")}
+              href="/contact"
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={isActive("/support")}
+              href="/support"
+            >
+              Support
+            </Link>
           </li>
         </ul>
       </div>

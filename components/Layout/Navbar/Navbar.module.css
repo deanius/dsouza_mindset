@@ -1,11 +1,18 @@
+.navbar {
+  display:flex;
+  align-items: center;
+}
+
 .navList {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.3rem;
+  margin-right: 80px;
 }
 
 .navLink {
   text-decoration: none;
   font-weight: bold;
+
 }
 
 @media (max-width: 768px) {

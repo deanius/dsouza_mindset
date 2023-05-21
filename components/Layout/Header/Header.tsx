@@ -23,7 +23,6 @@ const Header = () => {
       >
         Menu
       </div>
-      <ThemeToggle />
     </header>
   );
 };
