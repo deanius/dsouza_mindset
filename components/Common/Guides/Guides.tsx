@@ -1,14 +1,9 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import GuidePost from "./GuidePost/GuidePost";
-
 import styles from "./Guides.module.css";
+
+import "swiper/swiper.min.css";
 
 const GuidesList = () => {
   return (
@@ -19,8 +14,6 @@ const GuidesList = () => {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={3}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
           <GuidePost />
