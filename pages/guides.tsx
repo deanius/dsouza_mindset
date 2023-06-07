@@ -1,4 +1,12 @@
-// import React from "react";
+import React from "react";
+
+const guides = () => {
+  return (
+    <div>guides</div>
+  )
+}
+
+export default guides
 // import Layout from "../components/Layout/Layout";
 // import client from "../apolloclient";
 // import { useQuery, gql } from "@apollo/client";
