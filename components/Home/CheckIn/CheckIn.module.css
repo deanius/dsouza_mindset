@@ -1,0 +1,32 @@
+.checkIn {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.ui {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 480px;
+  height: 320px;
+}
+
+.ui h2 {
+  margin-bottom: 1.5rem;
+}
+
+.ui button {
+  width: fit-content;
+  pointer-events: none;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}

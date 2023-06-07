@@ -1,13 +1,59 @@
 :root {
   --bg-color: #ffffff;
+  --sc-color: #eae9e9;
   --text-color: #151515;
-  --border-color: #ddd;
+  --border-color: #5a5a5a;
 }
 
 .dark-mode {
   --bg-color: #000;
+  --sc-color: #202020;
   --text-color: #ffffff;
-  --border-color: #303030;
+  --border-color: #919191;
+}
+
+/* Hide scrollbar for WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Hide scrollbar for Firefox and other browsers */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+
+.pointer {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.subheading {
+  font-size: 17px !important;
+  font-weight: 500;
+  opacity: 0.65;
 }
 
 * {
@@ -17,9 +63,12 @@
 }
 
 body {
+  padding-top: 7rem;
   font-family: "Nunito", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -53,16 +102,29 @@ a {
   text-decoration: none;
 }
 
+p {
+}
+
 h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 28px;
   letter-spacing: 1px;
   color: var(--heading-color);
   white-space: nowrap;
 }
 
+h2 {
+  font-family: "Raleway", sans-serif;
+}
 h3 {
-  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 860px) {
+  h1 {
+    font-size: 38px;
+  }
 }
 
 .heroContain {
@@ -83,19 +145,25 @@ h3 {
   margin-right: 1rem;
 }
 
-.formContain {
-  width: 100%;
-  max-width: 1040px;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-
-.formContain p {
-  margin-top: 16px;
+.subtitle {
+  margin-top: 14px;
   opacity: 0.65;
 }
 
-.formContain .inner {
+.formContain {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.formContain p {
+  margin-top: 14px;
+  opacity: 0.65;
+  letter-spacing: 0.1px;
+}
+
+.form-inner {
   display: flex;
   justify-content: space-between;
   margin-top: 48px;
@@ -111,8 +179,8 @@ h3 {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.SwitchRoot[data-state="checked"] {
-  background-color: rgb(72, 0, 255);
+.SwitchRoot[data-state="unchecked"] {
+  background-color: #4ae1d7;
 }
 
 .SwitchThumb {
@@ -126,6 +194,76 @@ h3 {
   transform: translateX(2px);
   will-change: transform;
 }
-.SwitchThumb[data-state="checked"] {
+.SwitchThumb[data-state="unchecked"] {
   transform: translateX(19px);
+}
+
+.AvatarRoot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  overflow: hidden;
+  user-select: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: var(--blackA3);
+  margin-right: 1.25rem;
+}
+
+.AvatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.AvatarFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--violet11);
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.aboutText {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+.aboutText p {
+  line-height: 1.85;
+}
+
+.aboutText h1 {
+  margin-bottom: 1rem;
+}
+
+.aboutText h3 {
+  margin: 4rem 0 2rem 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.aboutText .btn-contain {
+  margin: 2rem 0;
+}
+
+
+
+
+.blogContain {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.blogContain h1 {
+  margin-bottom: 1rem;
 }

@@ -4,13 +4,15 @@ import Navbar from "../Navbar/Navbar";
 import ThemeToggle from "../../ThemeToggle";
 import styles from "./Header.module.css";
 import NavMenu from "../NavMenu/NavMenu";
+import AvatarCpt from "../../Common/Avatar/Avatar";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className={styles.header}>
-      <Link className={styles.logo} href="/">
+      <Link className={styles.logo} href="/test">
+        <AvatarCpt />
         The Dean Dsouza Mindset
       </Link>
       <Navbar />

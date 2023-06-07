@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Head from "next/head";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
+import Scrollbar from "../Common/Scrollbar/Scrollbar";
 
 interface Props {
   children: ReactNode;
@@ -21,6 +22,7 @@ const Layout = ({ children, title }: Props) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <Scrollbar/>
     </>
   );
 };

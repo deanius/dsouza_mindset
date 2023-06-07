@@ -1,0 +1,45 @@
+.heroContain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroImg {
+  border-radius: 8px;
+}
+
+.heroInfo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heroInfo h1 {
+    font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.btnContain {
+  margin-top: 28px;
+}
+
+.btnContain button {
+  margin-right: 20px;
+}
+
+.btnContain button:nth-last-child(1) {
+  background-color: unset;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 860px) {
+  .heroContain {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .heroInfo {
+    text-align: unset;
+    margin-top: unset;
+    margin-left: 64px;
+  }
+}

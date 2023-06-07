@@ -72,7 +72,7 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
         <input
           required
           type="email"
-          placeholder="Email"
+          placeholder="Email Address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className={styles.input}

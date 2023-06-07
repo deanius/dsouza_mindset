@@ -2,14 +2,8 @@ import { useState } from "react";
 import React from 'react';
 import * as Switch from '@radix-ui/react-switch';
 
-const SwitchDemo = () => (
-  <form>
-    
-  </form>
-);
-
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const handleToggle = () => {
     setDarkMode(!darkMode);
@@ -18,10 +12,9 @@ const ThemeToggle = () => {
 
   return (
     <div onClick={handleToggle} style={{ display: 'flex', alignItems: 'center' }}>
-      <label className="Label" htmlFor="airplane-mode" style={{ paddingRight: 15 }}>
-        {darkMode ? "Light" : "Dark"} Mode
+      <label className="Label" htmlFor="dark-mode" style={{ paddingRight: 15 }}>
       </label>
-      <Switch.Root className="SwitchRoot" id="airplane-mode">
+      <Switch.Root className="SwitchRoot" id="dark-mode" >
         <Switch.Thumb className="SwitchThumb" />
       </Switch.Root>
     </div>

@@ -1,0 +1,7 @@
+.divide {
+    width: 100%;
+    max-width: 1280px;
+    height: 1px;
+    margin: 6rem auto 6rem auto;
+    background-color: var(--border-color);
+}

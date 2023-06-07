@@ -83,7 +83,7 @@ const Socials = () => {
       </ul>
       <button>Submit</button>
       <a className={styles.direct} href="">
-        Or Contact me Directly
+        Contact me Directly
       </a>
     </div>
   );

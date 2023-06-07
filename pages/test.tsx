@@ -1,20 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
-import client from "../apolloclient";
-import { useQuery, gql } from "@apollo/client";
-import styles from "../components/Common/Posts/Posts.module.css";
-import Post from "../components/Common/Posts/Post/Post";
-import GuidesList from "../components/Common/Guides/Guides";
-import ContactForm from "../components/Common/ContactForm/ContactForm";
+import Hero from "../components/Home/Hero/Hero";
 import Socials from "../components/Common/Socials/Socials";
+import ContactForm from "../components/Common/ContactForm/ContactForm";
+import Activity from "../components/Home/Activity/Activity";
+import CheckIn from "../components/Home/CheckIn/CheckIn";
 import Divide from "../components/Common/Divide/Divide";
 
-const Guides = () => {
+const Test = () => {
   return (
-    <Layout title="The Dean Dsouza Mindset - Guides">
-      <GuidesList />
+    <Layout title="The Dean Dsouza Mindset - Portfolio">
+      <Hero />
+      <CheckIn />
+      <Activity />
       <Divide/>
-
       <div className="formContain">
         <div className="form-inner">
           <ContactForm
@@ -29,4 +28,4 @@ const Guides = () => {
   );
 };
 
-export default Guides;
+export default Test;

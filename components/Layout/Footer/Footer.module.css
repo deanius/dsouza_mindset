@@ -1,14 +1,14 @@
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 40px;
-    margin-top: 4rem;
-  border-top: 1px solid var(--border-color);
-  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 40px;
+  margin-top: 4rem;
+}
 
 .footer ul {
-    display:flex;
+  display: flex;
   gap: 2.3rem;
   font-weight: bold;
 }
@@ -16,11 +16,18 @@
 .footer h3 {
   font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: .8rem;
+  font-weight: 700;
+  margin-bottom: 0.65rem;
 }
 
 .footer p {
-  font-size: 13px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
   color: #999;
+}
+
+@media screen and (min-width: 860px) {
+  .footer {
+  padding: 2rem 40px;
+  }
 }

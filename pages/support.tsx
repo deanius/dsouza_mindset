@@ -3,8 +3,11 @@ import Layout from "../components/Layout/Layout";
 import client from "../apolloclient";
 import { useQuery, gql } from "@apollo/client";
 import Button from "../components/Common/Buttons/Button";
+import ContactForm from "../components/Common/ContactForm/ContactForm";
+import Socials from "../components/Common/Socials/Socials";
 
-const ReactQuill = typeof window === 'object' ? require('react-quill') : () => false;
+const ReactQuill =
+  typeof window === "object" ? require("react-quill") : () => false;
 
 const POSTS_QUERY = gql`
   query {
@@ -30,7 +33,16 @@ const Support = () => {
         readOnly={true}
         modules={{ toolbar: false }}
       />
-      <Button name="Get in Touch" location="/contact" />
+      <div className="formContain">
+        <div className="form-inner">
+          <ContactForm
+            serviceId={process.env.EMAILJS_SERVICE_ID}
+            templateId={process.env.EMAILJS_TEMPLATE_ID}
+            userId={process.env.EMAILJS_USER_ID}
+          />
+          <Socials />
+        </div>
+      </div>
     </Layout>
   );
 };

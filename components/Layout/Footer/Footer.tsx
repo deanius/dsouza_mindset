@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div>
         <h3>The Dean Dsouza Mindset</h3>
-        <p>Copyright © {new Date().getFullYear()}. All Rights Reserved</p>
+        <p>© {new Date().getFullYear()}. All Rights Reserved</p>
       </div>
       <div>
         <ul>
