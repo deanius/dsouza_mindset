@@ -1,4 +1,3 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import GuidePost from "./GuidePost/GuidePost";
 import styles from "./Guides.module.css";
@@ -11,7 +10,6 @@ const GuidesList = () => {
       <h1>Guides</h1>
       <p className="subheading">A treasure trove of life advice.</p>
       <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={3}
       >
