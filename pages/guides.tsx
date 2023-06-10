@@ -1,8 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
-import { useQuery, gql } from "@apollo/client";
-import styles from "../components/Common/Posts/Posts.module.css";
-import Post from "../components/Common/Posts/Post/Post";
 import GuidesList from "../components/Common/Guides/Guides";
 import ContactForm from "../components/Common/ContactForm/ContactForm";
 import Socials from "../components/Common/Socials/Socials";
