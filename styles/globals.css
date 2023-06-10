@@ -3,6 +3,7 @@
   --sc-color: #eae9e9;
   --text-color: #151515;
   --border-color: #5a5a5a;
+  --shadow-color: rgba(0, 0, 0, 0.16);
 }
 
 .dark-mode {
@@ -10,6 +11,7 @@
   --sc-color: #202020;
   --text-color: #ffffff;
   --border-color: #919191;
+  --shadow-color: rgba(255, 255, 255, 0.16);
 }
 
 /* Hide scrollbar for WebKit-based browsers */
@@ -42,7 +44,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
-
 
 .pointer {
   cursor: pointer;
@@ -255,9 +256,6 @@ h3 {
 .aboutText .btn-contain {
   margin: 2rem 0;
 }
-
-
-
 
 .blogContain {
   max-width: 1280px;

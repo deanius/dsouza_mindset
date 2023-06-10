@@ -6,7 +6,7 @@ const AvatarCpt = () => (
       className="AvatarImage"
       src="http://thedeandsouzamindset.ctcin.bio/upload/969041612109977.JPG
       "
-      alt="Pedro Duarte"
+      alt="Avatar"
     />
     <Avatar.Fallback className="AvatarFallback" delayMs={600}>
       JD

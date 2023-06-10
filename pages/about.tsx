@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
-import client from "../apolloclient";
-import { useQuery, gql } from "@apollo/client";
 import Button from "../components/Common/Buttons/Button";
 import ContactForm from "../components/Common/ContactForm/ContactForm";
 import Socials from "../components/Common/Socials/Socials";
@@ -70,22 +68,7 @@ It all starts with having the right mindset. That's what worked for me, and my g
 
 I am confident that I have discovered something valuable - a way of living - and I am elated to share it with you.`;
 
-const POSTS_QUERY = gql`
-  query {
-    pages {
-      edges {
-        node {
-          title
-          content(format: RENDERED)
-        }
-      }
-    }
-  }
-`;
-
 const About = () => {
-  const { loading, error, data } = useQuery(POSTS_QUERY, { client });
-
   const [markdown, setMarkdown] = useState(text);
 
   useEffect(() => {

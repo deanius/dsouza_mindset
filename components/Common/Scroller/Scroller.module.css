@@ -1,0 +1,16 @@
+.scroller {
+  position: absolute;
+  bottom: 2rem;
+  right: 40px;
+}
+
+.scroller svg {
+  height: 32px;
+}
+
+.scroller svg rect {
+  stroke: var(--text-color);
+}
+.scroller svg line {
+  stroke: var(--text-color);
+}

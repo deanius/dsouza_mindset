@@ -1,47 +1,55 @@
-import React, { useEffect } from "react";
+import styles from "../styles/Home.module.css";
+import getHeroData from "../contentful";
+import getActivityData from "../contentful";
+import Hero from "../components/Home/Hero/Hero";
+import CheckIn from "../components/Home/CheckIn/CheckIn";
 import Layout from "../components/Layout/Layout";
-import Button from "../components/Common/Buttons/Button";
-import client from "../apolloclient";
-import { useQuery, gql } from "@apollo/client";
+import { useEffect } from "react";
+import Divide from "../components/Common/Divide/Divide";
+import ContactForm from "../components/Common/ContactForm/ContactForm";
+import Socials from "../components/Common/Socials/Socials";
 
-const ReactQuill = typeof window === 'object' ? require('react-quill') : () => false;
-
-const POSTS_QUERY = gql`
-  query {
-    pages {
-      edges {
-        node {
-          title
-          content(format: RENDERED)
-        }
-      }
-    }
-  }
-`;
-
-const Home = () => {
-  const { loading, error, data } = useQuery(POSTS_QUERY, { client });
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+export default function Home({ hero, activity }: any) {
+  useEffect(() => {}, [activity]);
 
   return (
     <Layout title="The Dean Dsouza Mindset - Home">
-      <div className="heroContain">
-        <h1>{data?.pages?.edges[2].node.title}</h1>
-        <p>Mission statement. Currently static and will replace.</p>
-        <div className="heroBtnContain">
-          <Button name="About Me" location="/about" />
-          <Button name="View Blog" location="/blog" />
+      <div className={styles.main}>
+        {hero.map((hero: any) => (
+          <>
+            <Hero
+              title={hero.fields.title}
+              statement={hero.fields.missionStatement}
+              img={hero.fields.heroImage.fields.file.url}
+            />
+          </>
+        ))}
+        {activity.map((item: any) => (
+          <>
+            {console.log(item)}
+            <h2>{item.fields.name}</h2>
+          </>
+        ))}
+        <CheckIn />
+        <Divide />
+        <div className="formContain">
+          <div className="form-inner">
+            <ContactForm
+              serviceId={process.env.EMAILJS_SERVICE_ID}
+              templateId={process.env.EMAILJS_TEMPLATE_ID}
+              userId={process.env.EMAILJS_USER_ID}
+            />
+            <Socials />
+          </div>
         </div>
       </div>
-        <ReactQuill
-          value={data?.pages?.edges[1].node.content}
-          readOnly={true}
-          modules={{ toolbar: false }}
-        />
     </Layout>
   );
-};
+}
 
-export default Home;
+Home.getInitialProps = async () => {
+  const hero = await getHeroData();
+  const activity = await getActivityData();
+
+  return { activity, hero };
+};

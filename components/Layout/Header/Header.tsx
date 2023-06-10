@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
-import ThemeToggle from "../../ThemeToggle";
+import ThemeToggle from "../../Common/ThemeToggle";
 import styles from "./Header.module.css";
 import NavMenu from "../NavMenu/NavMenu";
 import AvatarCpt from "../../Common/Avatar/Avatar";
@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Link className={styles.logo} href="/test">
+      <Link className={styles.logo} href="/">
         <AvatarCpt />
         The Dean Dsouza Mindset
       </Link>

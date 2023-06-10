@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./Navbar.module.css";
-import ThemeToggle from "../../ThemeToggle";
+import ThemeToggle from "../../Common/ThemeToggle";
 import { useRouter } from "next/router";
 
 const Navbar = () => {

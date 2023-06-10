@@ -3,6 +3,8 @@ import Head from "next/head";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Scrollbar from "../Common/Scrollbar/Scrollbar";
+import Socials from "./Socials/Socials";
+import Scroller from "../Common/Scroller/Scroller";
 
 interface Props {
   children: ReactNode;
@@ -21,6 +23,8 @@ const Layout = ({ children, title }: Props) => {
       </Head>
       <Header />
       <main>{children}</main>
+      <Socials/>
+      <Scroller/>
       <Footer />
       <Scrollbar/>
     </>

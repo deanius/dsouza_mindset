@@ -1,36 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
-import client from "../apolloclient";
-import { useQuery, gql } from "@apollo/client";
 import Post from "../components/Common/Posts/Post/Post";
 import styles from "../components/Common/Posts/Posts.module.css";
 import ContactForm from "../components/Common/ContactForm/ContactForm";
 import Socials from "../components/Common/Socials/Socials";
 import Divide from "../components/Common/Divide/Divide";
 
-const POSTS_QUERY = gql`
-  query {
-    posts(where: { categoryName: "Blog" }) {
-      nodes {
-        id
-        date
-        content
-        excerpt
-        title
-        featuredImage {
-          node {
-            sourceUrl
-          }
-        }
-        date
-      }
-    }
-  }
-`;
-
 const Blog = () => {
-  const { loading, error, data } = useQuery(POSTS_QUERY, { client });
-
   return (
     <Layout title="The Dean Dsouza Mindset - Blog">
       <div className="blogContain">
