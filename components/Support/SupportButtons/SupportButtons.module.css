@@ -1,0 +1,15 @@
+.supportButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.supportButtons button {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.inactive {
+  pointer-events: none;
+  opacity: 0.65;
+}

@@ -24,7 +24,6 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
       from_name: `${firstName} ${lastName}`,
       email: email,
       message: message,
-      subscribe: subscription ? "Yes" : "No",
     };
 
     emailjs.send(serviceId, templateId, templateParams, userId).then(
@@ -42,8 +41,6 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
       }
     );
   };
-
-  const [subscribed, setSubscribed] = useState(false);
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
@@ -87,6 +84,7 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
           className={styles.input}
         ></textarea>
       </div>
+      <button type="submit">Submit</button>
     </form>
   );
 };

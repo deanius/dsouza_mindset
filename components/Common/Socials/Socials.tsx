@@ -24,7 +24,7 @@ const Socials = () => {
               fill="currentColor"
             />
           </svg>
-          <a href="https://instagram.com">Instagram</a>
+          <a href="https://www.instagram.com/thedeandsouzamindset/">Instagram</a>
         </li>
         <li>
           <svg
@@ -40,7 +40,7 @@ const Socials = () => {
             />
           </svg>
 
-          <a href="https://instagram.com">TikTok</a>
+          <a href="https://www.tiktok.com/t/ZTdWu6k7s/">TikTok</a>
         </li>
         <li>
           <svg
@@ -59,11 +59,10 @@ const Socials = () => {
             />
           </svg>
 
-          <a href="https://instagram.com">LinkTree</a>
+          <a href="http://thedeandsouzamindset.ctcin.bio/?fbclid=PAAab6KaPczQwj4abtlmrj0pqI24XlttHuinb7eAZ-IuOSJE9JlrOapSzHADc_aem_th_AcW7sLEourVAbmQ2RItiuIjt5sWqJQOapuHoXiRV2u6tqG_ZPt_fbjC_JvvfB3-SKmU">LinkTree</a>
         </li>
       </ul>
-      <button>Submit</button>
-      <a className={styles.direct} href="">
+      <a className={styles.direct} href="mailto:deandsouza15892@gmail.com">
         Contact me Directly
       </a>
     </div>

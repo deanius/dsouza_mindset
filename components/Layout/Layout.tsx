@@ -24,7 +24,6 @@ const Layout = ({ children, title }: Props) => {
       <Header />
       <main>{children}</main>
       <Socials/>
-      <Scroller/>
       <Footer />
       <Scrollbar/>
     </>

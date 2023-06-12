@@ -6,7 +6,7 @@ const Socials = () => {
     <div className={styles.socials}>
       <ul>
         <li>
-          <a href="https://instagram.com">
+          <a href="https://www.instagram.com/thedeandsouzamindset/">
             <svg
               width="24"
               height="24"
@@ -26,7 +26,7 @@ const Socials = () => {
           </a>
         </li>
         <li>
-          <a href="https://instagram.com">
+          <a href="https://www.tiktok.com/t/ZTdWu6k7s/">
             <svg
               width="24"
               height="24"
@@ -42,7 +42,7 @@ const Socials = () => {
           </a>
         </li>
         <li>
-          <a href="https://instagram.com">
+          <a href="http://thedeandsouzamindset.ctcin.bio/?fbclid=PAAab6KaPczQwj4abtlmrj0pqI24XlttHuinb7eAZ-IuOSJE9JlrOapSzHADc_aem_th_AcW7sLEourVAbmQ2RItiuIjt5sWqJQOapuHoXiRV2u6tqG_ZPt_fbjC_JvvfB3-SKmU">
             <svg
               width="24"
               height="24"

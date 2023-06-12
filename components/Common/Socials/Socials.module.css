@@ -40,6 +40,6 @@ border-bottom: 1px solid var(--border-color);
 }
 
 .socials .direct {
-    margin-top: 48px;
+    font-weight: 600;
     text-decoration: underline;
 }

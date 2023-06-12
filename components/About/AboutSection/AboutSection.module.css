@@ -1,0 +1,25 @@
+.aboutSection {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.aboutSection:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.aboutSection:nth-child(even) .aboutImage {
+  margin-right: 4rem;
+}
+
+.aboutSection:nth-child(odd) .aboutImage {
+  margin-left: 4rem;
+}
+
+.aboutInfo h2 {
+  margin-bottom: 2rem;
+}
+
+.aboutImage img {
+  max-width: 340px;
+  border-radius: 4px;
+}

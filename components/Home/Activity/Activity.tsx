@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./Activity.module.css";
 import Button from "../../Common/Buttons/Button";
 
-const Activity = () => {
+const Activity = ({ data }: any) => {
+  console.log(data[0].fields);
   return (
     <div className={styles.activity}>
       <div className={styles.activityRow}>
@@ -10,16 +11,16 @@ const Activity = () => {
           <h3>Currently Watching:</h3>
           <div className={styles.activityItem}>
             <div className={styles.activityImg}>
-              <img
-                src="https://flxt.tmsimg.com/assets/p15455205_b_v8_ab.jpg"
-                alt=""
-              />
+              <img src={data[0].fields.image.fields.file.url} alt="" />
             </div>
             <div className={styles.itemInfo}>
-              <h4>Succession</h4>
-              <span>Series</span>
+              <h4>{data[0].fields.name}</h4>
+              <span>{data[0].fields.type}</span>
 
-              <Button name="Letterboxd" location="" />
+              <Button
+                name={data[0].fields.platform}
+                location={data[0].fields.link}
+              />
             </div>
           </div>
         </div>
@@ -27,16 +28,16 @@ const Activity = () => {
           <h3>Currently Reading:</h3>
           <div className={styles.activityItem}>
             <div className={styles.activityImg}>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/it/c/cb/Chainsaw_Man_Volume_1.jpg"
-                alt=""
-              />
+              <img src={data[1].fields.image.fields.file.url} alt="" />
             </div>
             <div className={styles.itemInfo}>
-              <h4>Chainsaw Man</h4>
-              <span>Comic Series</span>
+              <h4>{data[1].fields.name}</h4>
+              <span>{data[1].fields.type}</span>
 
-              <Button name="Goodreads" location="" />
+              <Button
+                name={data[1].fields.platform}
+                location={data[1].fields.link}
+              />
             </div>
           </div>
         </div>
@@ -46,31 +47,33 @@ const Activity = () => {
           <h3>Currently Listening:</h3>
           <div className={styles.activityItem}>
             <div className={styles.activityImg}>
-              <img
-                src="https://cdn.theathletic.com/app/uploads/2023/01/03115107/Tifo_New_Podcast_Monogram_3000px_2022-1.png"
-                alt=""
-              />
+              <img src={data[2].fields.image.fields.file.url} alt="" />
             </div>
             <div className={styles.itemInfo}>
-              <h4>Tifo Podcast</h4>
-              <span>Podcast</span>
-              <Button name="Spotify" location="" />
+              <h4>{data[2].fields.name}</h4>
+              <span>{data[2].fields.type}</span>
+
+              <Button
+                name={data[2].fields.platform}
+                location={data[2].fields.link}
+              />
             </div>
           </div>
         </div>
         <div className={styles.activityInner}>
-            <h3></h3>
+          <h3></h3>
           <div className={styles.activityItem}>
             <div className={styles.activityImg}>
-              <img
-                src="https://images.genius.com/f486d98c29e55b11cfb7b7d22d1ede47.1000x1000x1.jpg"
-                alt=""
-              />
+              <img src={data[3].fields.image.fields.file.url} alt="" />
             </div>
             <div className={styles.itemInfo}>
-              <h4>KAYTRAMINÉ</h4>
-              <span>Album</span>
-              <Button name="Spotify" location="" />
+              <h4>{data[3].fields.name}</h4>
+              <span>{data[3].fields.type}</span>
+
+              <Button
+                name={data[3].fields.platform}
+                location={data[3].fields.link}
+              />
             </div>
           </div>
         </div>

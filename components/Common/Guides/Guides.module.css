@@ -1,11 +1,14 @@
 .guides {
   max-width: 1280px;
   margin: 0 auto;
-
 }
 
 .guides h1 {
   margin-bottom: 1rem;
+}
+
+.guidesContent {
+  margin-top: 3rem;
 }
 
 .guidePost {

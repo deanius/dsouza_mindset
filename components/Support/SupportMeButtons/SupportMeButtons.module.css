@@ -1,0 +1,30 @@
+.supportMeButtons {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  margin: 3rem auto 6rem auto;
+}
+
+.supportMeButtons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.patreon {
+  background-color: #052d49;
+}
+
+.gofundme {
+  background-color: #5ea800;
+}
+
+.wishlist {
+  background-color: #ff9900;
+}
