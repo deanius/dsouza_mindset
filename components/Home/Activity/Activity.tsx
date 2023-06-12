@@ -3,7 +3,6 @@ import styles from "./Activity.module.css";
 import Button from "../../Common/Buttons/Button";
 
 const Activity = ({ data }: any) => {
-  console.log(data[0].fields);
   return (
     <div className={styles.activity}>
       <div className={styles.activityRow}>
@@ -16,7 +15,6 @@ const Activity = ({ data }: any) => {
             <div className={styles.itemInfo}>
               <h4>{data[0]?.fields?.name}</h4>
               <span>{data[0]?.fields?.type}</span>
-
               <Button
                 name={data[0]?.fields?.platform}
                 location={data[0]?.fields?.link}
