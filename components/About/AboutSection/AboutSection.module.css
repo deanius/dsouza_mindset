@@ -1,6 +1,7 @@
 .aboutSection {
   display: flex;
-  margin-top: 3rem;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 .aboutSection:nth-child(even) {

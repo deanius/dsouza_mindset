@@ -46,6 +46,10 @@
     flex-direction: column;
 }
 
+.itemInfo button {
+    width: 120px;
+}
+
 @media screen and (min-width: 860px) {
     .activityItem {
         display: flex;
