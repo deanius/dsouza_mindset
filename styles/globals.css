@@ -64,7 +64,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  padding-top: 7rem;
   font-family: "Nunito", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -73,7 +72,13 @@ body {
 }
 
 main {
-  padding: 40px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 860px) {
+  main {
+    padding: 40px;
+  }
 }
 
 button {
@@ -151,6 +156,10 @@ h3 {
   opacity: 0.65;
 }
 
+.contactPage {
+  margin-top: 8rem;
+}
+
 .formContain {
   width: 100%;
   max-width: 1100px;
@@ -166,8 +175,15 @@ h3 {
 
 .form-inner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 48px;
+}
+
+@media screen and (min-width: 860px) {
+  .form-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .SwitchRoot {
@@ -233,10 +249,104 @@ h3 {
   font-weight: 500;
 }
 
+.SelectTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  height: 35px;
+  gap: 5px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  box-shadow: 0 2px 10px var(--blackA7);
+}
+
+.SelectTrigger:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+.SelectIcon {
+  color: Var(--violet11);
+}
+
+.SelectContent {
+  overflow: hidden;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border-radius: 6px;
+  box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35),
+    0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+}
+
+.SelectViewport {
+  padding: 5px;
+}
+
+.SelectItem {
+  line-height: 1;
+  color: var(--violet11);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 35px 0 25px;
+  position: relative;
+  user-select: none;
+}
+.SelectItem[data-disabled] {
+  color: var(--mauve8);
+  pointer-events: none;
+}
+.SelectItem[data-highlighted] {
+  outline: none;
+  background-color: var(--violet9);
+  color: var(--violet1);
+}
+
+.SelectLabel {
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 25px;
+  color: var(--mauve11);
+}
+
+.SelectSeparator {
+  height: 1px;
+  background-color: var(--violet6);
+  margin: 5px;
+}
+
+.SelectItemIndicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SelectScrollButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: var(--bg-color);
+  color: var(--violet11);
+  cursor: default;
+}
+
 .aboutText {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 8rem;
+  padding-top: 8rem;
 }
 
 .aboutText p {
@@ -260,12 +370,21 @@ h3 {
 .blogContain {
   max-width: 1280px;
   margin: 0 auto;
+  padding-top: 8rem;
 }
 
 .blogContain h1 {
   margin-bottom: 1rem;
 }
 
+.supportHead {
+  padding-top: 8rem;
+}
+
 .supportHead h1 {
   margin-bottom: 1rem;
+}
+
+.guidesPage {
+  padding-top: 8rem;
 }

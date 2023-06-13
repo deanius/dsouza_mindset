@@ -1,0 +1,38 @@
+.postInfo {
+display: flex;
+justify-content: space-between;
+    font-size: 22px;
+margin-bottom: 4rem;
+font-weight: 600;
+padding: 0 6rem;
+}
+
+.postInfo span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    opacity: 0.65;
+}
+
+.postInfo img {
+    border-radius: 4px;
+}
+
+.name {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.date {
+    opacity: 0.65;
+    font-size: 18px;
+}
+
+.content {
+    line-height: 1.85;
+}
+
+.postInfo a {
+    display: block;
+    margin-top: 2rem;
+}

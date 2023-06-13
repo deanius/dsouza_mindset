@@ -3,16 +3,28 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 40px;
+  padding: 1.5rem 20px;
   margin-top: 4rem;
   background-color: var(--bg-color);
 }
 
+@media screen and (min-width: 860px) {
+  .footer {
+    padding: 1.5rem 40px;
+    justify-content:space-between;
+  }
+}
+
 .footer ul {
-  display: flex;
+  display: none;
   gap: 2.3rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 860px) {
+  .footer ul {
+    display: flex;
+  }
 }
 
 .footer h3 {
@@ -30,6 +42,6 @@
 
 @media screen and (min-width: 860px) {
   .footer {
-  padding: 2rem 40px;
+    padding: 2rem 40px;
   }
 }

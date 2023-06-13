@@ -6,7 +6,7 @@ const AboutSection = ({ question, answer, image }: any) => {
     <div className={styles.aboutSection}>
       <div className={styles.aboutInfo}>
         <h2>{question}</h2>
-        <p>{answer}</p>
+        <div dangerouslySetInnerHTML={{ __html: answer }} />
       </div>
       <div className={styles.aboutImage}>
         <img src={image} alt="" />

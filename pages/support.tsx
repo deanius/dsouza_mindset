@@ -35,7 +35,7 @@ const Support = ({ creators, charities }: any) => {
     <Layout title="The Dean Dsouza Mindset - Support">
       <div className="supportHead">
         <h1>Support</h1>
-        <p className="subheading">Lorem ipsum dolor sit amet.</p>
+        <p className="subheading">Creators and Charities I Support.</p>
       </div>
 
       <SupportButtons active={active} setActive={setActive} />

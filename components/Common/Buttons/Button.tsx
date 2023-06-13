@@ -8,9 +8,9 @@ type ButtonProps = {
 
 const Button = ({ name, location }: ButtonProps) => {
   return (
-    <button className={styles.button}>
-      <Link href={location}>{name}</Link>
-    </button>
+    <Link href={location}>
+      <button className={styles.button}>{name}</button>
+    </Link>
   );
 };
 

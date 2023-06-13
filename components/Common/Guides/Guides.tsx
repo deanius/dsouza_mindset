@@ -1,18 +1,29 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import GuidePost from "./GuidePost/GuidePost";
 import styles from "./Guides.module.css";
-
-import "swiper/swiper.min.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Post from "../Posts/Post/Post";
+import Dropdown from "../Dropdown/Dropdown";
+
+const categories = [
+  "Travel",
+  "Opinion Piece",
+  "Immigrant",
+  "Wellness",
+  "Life",
+];
 
 const GuidesList = () => {
-  const swiperRef = useRef(null);
+  const [activeCategory, setActiveCategory] = useState(null);
+  console.log(activeCategory)
 
   return (
     <div className={styles.guides}>
       <h1>Guides</h1>
       <p className="subheading">A treasure trove of life advice.</p>
+      <Dropdown
+          categories={categories}
+          activeCategory={activeCategory}
+          setActiveCategory={setActiveCategory}
+        />
       <div className={styles.guidesContent}>
           <Post
             key={1}

@@ -84,7 +84,7 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
           className={styles.input}
         ></textarea>
       </div>
-      <button type="submit">Submit</button>
+      <button className={styles.submitButton} type="submit">Submit</button>
     </form>
   );
 };

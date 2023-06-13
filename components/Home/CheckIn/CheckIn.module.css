@@ -1,17 +1,23 @@
 .checkIn {
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 6rem;
+  text-align: center;
 }
+
+
 
 .ui {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   height: 320px;
+  margin: 0 auto;
 }
 
 .ui h2 {
@@ -29,4 +35,11 @@
   align-items: center;
   width: 100%;
   padding: 1rem;
+}
+
+@media screen and (min-width: 860px) {
+  .checkIn {
+    flex-direction: row;
+    text-align: unset;
+  }
 }

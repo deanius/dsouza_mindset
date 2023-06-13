@@ -6,9 +6,9 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const router = useRouter();
 
-  const isActive = (path: any) => {
-    if (router.pathname === path) {
-      return { opacity: 0.3 }; // Set the active link color
+  const isActive = (path: string) => {
+    if (router.pathname.startsWith(path)) {
+      return { opacity: 0.3, PointerEvent:"none" }; // Set the active link color
     } else {
       null;
     }

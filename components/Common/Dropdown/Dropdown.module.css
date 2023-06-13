@@ -1,0 +1,21 @@
+.dropdown {
+    margin-top: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.toggleButton {
+    padding: 8px 40px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+}
+
+.active {
+    opacity: 0.65;
+}
+
+.categories {
+    margin-top: 1rem;
+}

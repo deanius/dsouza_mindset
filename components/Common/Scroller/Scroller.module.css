@@ -1,7 +1,14 @@
 .scroller {
+  display: none;
   position: absolute;
   bottom: 2rem;
   right: 40px;
+}
+
+@media screen and (min-width: 860px) {
+  .scroller {
+    display: block;
+  }
 }
 
 .scroller svg {

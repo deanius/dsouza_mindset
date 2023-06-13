@@ -1,7 +1,7 @@
 .aboutSection {
   display: flex;
   align-items: center;
-  margin-top: 4rem;
+  margin: 3rem 0 8rem 0;
 }
 
 .aboutSection:nth-child(even) {
@@ -18,6 +18,10 @@
 
 .aboutInfo h2 {
   margin-bottom: 2rem;
+}
+
+.aboutInfo {
+  line-height: 1.85;
 }
 
 .aboutImage img {
