@@ -11,7 +11,7 @@ How are you feeling today?`;
 const help = `When in doubt, never be afraid to seek help.  
 If you or a friend are ever in need, there are support systems in place that you can use.
 
-> 💡 Please keep in mind that certain hotlines may end up in the police being sent to the caller's house. This may put the person in more danger, depending on the situation. This shouldn't be a reason to not make a call; it's simply providing situational awareness.
+> 💡 Please do keep in mind that certain hotlines may end up in the police being sent to the caller's house. This may put the person in more danger, depending on the situation. This shouldn't be a reason to not make a call; it's simply providing situational awareness.
 
 Depending on your country of residence, there are different options and numbers to call.
 
