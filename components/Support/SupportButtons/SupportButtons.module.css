@@ -1,6 +1,7 @@
 .supportButtons {
   display: flex;
   width: fit-content;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
