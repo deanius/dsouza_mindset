@@ -116,7 +116,6 @@ h1 {
   font-size: 28px;
   letter-spacing: 1px;
   color: var(--heading-color);
-  white-space: nowrap;
 }
 
 h2 {

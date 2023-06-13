@@ -1,11 +1,21 @@
 .aboutSection {
   display: flex;
-  align-items: center;
+  flex-direction: column-reverse;
   margin: 3rem 0 8rem 0;
 }
 
-.aboutSection:nth-child(even) {
+
+
+
+@media screen and (min-width: 860px) {
+  .aboutSection {
+    flex-direction: row;
+  align-items: center;
+  }
+
+  .aboutSection:nth-child(even) {
   flex-direction: row-reverse;
+}
 }
 
 .aboutSection:nth-child(even) .aboutImage {
@@ -25,6 +35,7 @@
 }
 
 .aboutImage img {
+  width: 100%;
   max-width: 340px;
   border-radius: 4px;
 }
