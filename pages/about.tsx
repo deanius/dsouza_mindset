@@ -15,6 +15,7 @@ const client = createClient({
 const getAboutData = async () => {
   const response = await client.getEntries({
     content_type: "aboutSection",
+    order: ['fields.id']
   });
 
   return response.items;
@@ -40,9 +41,9 @@ const About = ({ about }: any) => {
       <div className="formContain">
         <div className="form-inner">
           <ContactForm
-            serviceId={process.env.EMAILJS_SERVICE_ID}
-            templateId={process.env.EMAILJS_TEMPLATE_ID}
-            userId={process.env.EMAILJS_USER_ID}
+            serviceId="service_h7oepbj"
+            templateId="template_2upgo0k"
+            userId="eGMCIdPiH-R_XjZbK"
           />
           <Socials />
         </div>

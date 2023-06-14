@@ -6,7 +6,6 @@
 
 
 
-
 @media screen and (min-width: 860px) {
   .aboutSection {
     flex-direction: row;
@@ -35,7 +34,6 @@
 }
 
 .aboutImage img {
-  width: 100%;
-  max-width: 340px;
+  width: 340px;
   border-radius: 4px;
 }

@@ -18,14 +18,25 @@ const client = createClient({
 const getActivityData = async () => {
   const response = await client.getEntries({
     content_type: "activity",
+    order: ["fields.id"],
   });
 
   return response.items;
 };
 
-export default function Home({ hero, activity }: any) {
+const getAvatarData = async () => {
+  const response = await client.getEntries({
+    content_type: "avatar",
+  });
+
+  return response.items;
+};
+
+export default function Home({ hero, activity, avatar }: any) {
   return (
-    <Layout title="The Dean Dsouza Mindset - Home">
+    <Layout
+      title="The Dean Dsouza Mindset - Home"
+    >
       <div className={styles.main}>
         {hero.map((hero: any) => (
           <>
@@ -58,6 +69,7 @@ export default function Home({ hero, activity }: any) {
 Home.getInitialProps = async () => {
   const hero = await getHeroData();
   const activity = await getActivityData();
+  const avatar = await getAvatarData();
 
-  return { hero, activity };
+  return { hero, activity, avatar };
 };

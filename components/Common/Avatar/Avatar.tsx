@@ -1,6 +1,6 @@
 import * as Avatar from "@radix-ui/react-avatar";
 
-const AvatarCpt = () => (
+const AvatarCpt = (img:any) => (
   <Avatar.Root className="AvatarRoot">
     <Avatar.Image
       className="AvatarImage"

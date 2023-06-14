@@ -66,7 +66,8 @@
 @media screen and (min-width: 860px) {
   .activityItem {
     display: unset;
-    align-items: unset;
+    align-items: center;
+    flex-direction: row;
   }
 }
 
@@ -79,6 +80,7 @@
 @media screen and (min-width: 860px) {
   .itemInfo {
     align-items: unset;
+    margin-left: 2rem;
   }
 }
 
