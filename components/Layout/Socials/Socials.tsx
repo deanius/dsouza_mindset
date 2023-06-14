@@ -6,7 +6,11 @@ const Socials = () => {
     <div className={styles.socials}>
       <ul>
         <li>
-          <a href="https://www.instagram.com/thedeandsouzamindset/">
+          <a
+            href="https://www.instagram.com/thedeandsouzamindset/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               width="24"
               height="24"
@@ -26,7 +30,11 @@ const Socials = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.tiktok.com/t/ZTdWu6k7s/">
+          <a
+            href="https://www.tiktok.com/t/ZTdWu6k7s/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               width="24"
               height="24"
@@ -42,7 +50,11 @@ const Socials = () => {
           </a>
         </li>
         <li>
-          <a href="http://thedeandsouzamindset.ctcin.bio/?fbclid=PAAab6KaPczQwj4abtlmrj0pqI24XlttHuinb7eAZ-IuOSJE9JlrOapSzHADc_aem_th_AcW7sLEourVAbmQ2RItiuIjt5sWqJQOapuHoXiRV2u6tqG_ZPt_fbjC_JvvfB3-SKmU">
+          <a
+            href="http://thedeandsouzamindset.ctcin.bio/?fbclid=PAAab6KaPczQwj4abtlmrj0pqI24XlttHuinb7eAZ-IuOSJE9JlrOapSzHADc_aem_th_AcW7sLEourVAbmQ2RItiuIjt5sWqJQOapuHoXiRV2u6tqG_ZPt_fbjC_JvvfB3-SKmU"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               width="24"
               height="24"

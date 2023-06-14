@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { GetStaticProps } from "next";
 import { createClient } from "contentful";
-import Post from "../../components/Common/Posts/Post/Post";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import Dropdown from "../../components/Common/Dropdown/Dropdown";
@@ -17,11 +15,14 @@ function Preview(str: string) {
   return result;
 }
 
-const categories = ["Travel", "Opinion Piece", "Immigrant", "Wellness", "Life"];
-
-const GuideIndex = ({ posts }: { posts: any[] }) => {
+const GuideIndex = ({
+  posts,
+  categories,
+}: {
+  posts: any[];
+  categories: any;
+}) => {
   const [activeCategory, setActiveCategory] = useState(null);
-  console.log(activeCategory);
 
   const filteredPosts = activeCategory
     ? posts.filter((post: any) => post.fields.category === activeCategory)
@@ -70,11 +71,15 @@ export const getStaticProps: GetStaticProps = async () => {
     space: "59w8420dbrn3",
     accessToken: "aKFFMQlXzNDRZ-A037aG16CYx1-lfDUIHEqWZO0_e4Y",
   });
-  const entries = await client.getEntries<any>({ content_type: "guide" });
+  const posts = await client.getEntries<any>({ content_type: "guide" });
+  const categories = await client.getEntries<any>({
+    content_type: "guideCategory",
+  });
 
   return {
     props: {
-      posts: entries.items,
+      posts: posts.items,
+      categories: categories.items,
     },
     revalidate: 1,
   };

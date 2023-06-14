@@ -16,10 +16,13 @@ const Activity = ({ data }: any) => {
               <h4>{data[0]!.fields.name}</h4>
               <span>{data[0]!.fields.type}</span>
               <p>{data[0]!.fields.description}</p>
-              <Button
-                name={data[0]!.fields.platform}
-                location={data[0]!.fields.link}
-              />
+              <a
+                href={data[0]!.fields.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data[0]!.fields.platform}
+              </a>
             </div>
           </div>
         </div>
@@ -33,10 +36,13 @@ const Activity = ({ data }: any) => {
               <h4>{data[1]!.fields.name}</h4>
               <span>{data[1]!.fields.type}</span>
               <p>{data[1]!.fields.description}</p>
-              <Button
-                name={data[1]!.fields.platform}
-                location={data[1]!.fields.link}
-              />
+              <a
+                href={data[1]!.fields.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data[1]!.fields.platform}
+              </a>
             </div>
           </div>
         </div>
@@ -52,10 +58,13 @@ const Activity = ({ data }: any) => {
               <h4>{data[2]!.fields.name}</h4>
               <span>{data[2]!.fields.type}</span>
               <p>{data[2]!.fields.description}</p>
-              <Button
-                name={data[2]!.fields.platform}
-                location={data[2]!.fields.link}
-              />
+              <a
+                href={data[2]!.fields.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data[2]!.fields.platform}
+              </a>
             </div>
           </div>
         </div>
@@ -69,10 +78,13 @@ const Activity = ({ data }: any) => {
               <h4>{data[3]!.fields.name}</h4>
               <span>{data[3]!.fields.type}</span>
               <p>{data[3]!.fields.description}</p>
-              <Button
-                name={data[3]!.fields.platform}
-                location={data[3]!.fields.link}
-              />
+              <a
+                href={data[3]!.fields.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data[3]!.fields.platform}
+              </a>
             </div>
           </div>
         </div>

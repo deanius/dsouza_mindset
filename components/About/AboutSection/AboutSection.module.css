@@ -1,10 +1,8 @@
 .aboutSection {
   display: flex;
   flex-direction: column-reverse;
-  margin: 3rem 0 8rem 0;
+  margin: 0 0 8rem 0;
 }
-
-
 
 @media screen and (min-width: 860px) {
   .aboutSection {
@@ -27,6 +25,7 @@
 
 .aboutInfo h2 {
   margin-bottom: 2rem;
+  font-size: 28px;
 }
 
 .aboutInfo {
@@ -34,6 +33,7 @@
 }
 
 .aboutImage img {
+  width: 100%;
   width: 340px;
-  border-radius: 4px;
+  border-radius: 8px;
 }

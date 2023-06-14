@@ -4,7 +4,6 @@ import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Scrollbar from "../Common/Scrollbar/Scrollbar";
 import Socials from "./Socials/Socials";
-import Scroller from "../Common/Scroller/Scroller";
 
 interface Props {
   children: ReactNode;

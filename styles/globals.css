@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .subheading {
-  font-size: 17px !important;
+  font-size: 18px !important;
   font-weight: 500;
   opacity: 0.65;
 }
@@ -111,6 +111,10 @@ a {
 p {
 }
 
+.txt {
+  opacity: 0.87;
+}
+
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 28px;
@@ -130,6 +134,10 @@ h3 {
   h1 {
     font-size: 38px;
   }
+}
+
+.rotated {
+  transform: rotate(180deg);
 }
 
 .heroContain {
@@ -159,6 +167,10 @@ h3 {
   margin-top: 8rem;
 }
 
+.contactPage .form-inner {
+  margin-top: 4rem;
+}
+
 .formContain {
   width: 100%;
   max-width: 1100px;
@@ -182,6 +194,7 @@ h3 {
   .form-inner {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: unset;
   }
 }
 

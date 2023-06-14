@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   padding: 1.5rem 20px;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow-color) 0px -1px 4px;
   background-color: var(--bg-color);
 }
 
@@ -31,7 +32,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.85rem;
 }
 
 .footer p {

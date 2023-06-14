@@ -9,6 +9,7 @@ import Socials from "../components/Common/Socials/Socials";
 import Scroller from "../components/Common/Scroller/Scroller";
 import Activity from "../components/Home/Activity/Activity";
 import { createClient } from "contentful";
+import Mission from "../components/Home/Mission/Mission";
 
 const client = createClient({
   space: "59w8420dbrn3",
@@ -47,6 +48,7 @@ export default function Home({ hero, activity, avatar }: any) {
             />
           </>
         ))}
+        <Mission/>
         <CheckIn />
         <Activity data={activity} />
         <Divide />

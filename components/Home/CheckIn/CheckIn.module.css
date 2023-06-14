@@ -24,6 +24,12 @@
   margin-bottom: 1.5rem;
 }
 
+.ui h4 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  opacity: 0.65;
+}
+
 .ui button {
   width: fit-content;
   pointer-events: none;

@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { GetStaticProps } from "next";
 import { createClient } from "contentful";
-import Post from "../../components/Common/Posts/Post/Post";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import Dropdown from "../../components/Common/Dropdown/Dropdown";
@@ -12,17 +10,13 @@ function Preview(str: string) {
   const words = str.split(" ");
   const first20Words = words.slice(0, 20);
   const joined = first20Words.join(" ");
-  const stringWithoutBrTags = joined.replace(/<br>/gi, '');
+  const stringWithoutBrTags = joined.replace(/<br>/gi, "");
   const result = stringWithoutBrTags + "...";
   return result;
 }
 
-
-const categories = ["Travel", "Opinion Piece", "Immigrant", "Wellness", "Life"];
-
-const BlogIndex = ({ posts }: { posts: any[] }) => {
+const BlogIndex = ({ posts, categories }: { posts: any[], categories:any }) => {
   const [activeCategory, setActiveCategory] = useState(null);
-  console.log(activeCategory);
 
   const filteredPosts = activeCategory
     ? posts.filter((post: any) => post.fields.category === activeCategory)
@@ -73,11 +67,15 @@ export const getStaticProps: GetStaticProps = async () => {
     space: "59w8420dbrn3",
     accessToken: "aKFFMQlXzNDRZ-A037aG16CYx1-lfDUIHEqWZO0_e4Y",
   });
-  const entries = await client.getEntries<any>({ content_type: "blogPost" });
+  const posts = await client.getEntries<any>({ content_type: "blogPost" });
+  const categories = await client.getEntries<any>({
+    content_type: "blogCategory",
+  });
 
   return {
     props: {
-      posts: entries.items,
+      posts: posts.items,
+      categories: categories.items,
     },
     revalidate: 1,
   };

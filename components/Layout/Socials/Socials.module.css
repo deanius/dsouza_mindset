@@ -2,9 +2,10 @@
     display: none;
     position: fixed;
     bottom: 32px;
-    left: 40px;
+    right: 40px;
     z-index: 0;
-    background-color: var(--bg-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
     border-radius: 4px;
 }
 
@@ -17,7 +18,7 @@
 .socials ul {
     display: flex;
     align-items: center;
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .socials ul li {
@@ -30,7 +31,11 @@
     margin-right: unset;
 }
 
+.socials ul li a {
+    display: flex;
+}
+
 .socials ul li svg {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
 }

@@ -28,6 +28,21 @@ const Dropdown: React.FC<DropdownProps> = ({
     <div className={styles.dropdown}>
       <button className={styles.toggleButton} onClick={handleToggle}>
         {selectedOption || "Categories"}
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0.5"
+          viewBox="0 0 16 16"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+          className={isOpen ? "rotated" : ""}
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+          ></path>
+        </svg>
       </button>
       {isOpen && (
         <ul className={styles.categories}>
@@ -35,10 +50,14 @@ const Dropdown: React.FC<DropdownProps> = ({
             <li
               key={index}
               onClick={() => {
-                handleOptionSelect(option), setActiveCategory(option);
+                handleOptionSelect(option.fields.name),
+                  setActiveCategory(option.fields.name);
               }}
             >
-              {option}
+              <div className={styles.categoryImage}>
+                <img src={option.fields.image.fields.file.url} alt="" />
+              </div>
+              {option.fields.name}
             </li>
           ))}
         </ul>

@@ -7,15 +7,20 @@ font-weight: 600;
 padding: 0 6rem;
 }
 
+.postInfo h2 {
+    margin-bottom:1rem;
+}
+
 .postInfo span {
     display: block;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     opacity: 0.65;
 }
 
 .postInfo img {
-    border-radius: 4px;
+    border-radius: 8px;
+    max-width: 320px;
 }
 
 .name {
@@ -25,7 +30,7 @@ padding: 0 6rem;
 
 .date {
     opacity: 0.65;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .content {

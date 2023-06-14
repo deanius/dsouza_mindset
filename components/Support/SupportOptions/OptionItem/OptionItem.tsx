@@ -12,7 +12,9 @@ const OptionItem = ({ data }: any) => {
             : data.fields.charityName}
         </h4>
         <p>{data.fields.about}</p>
-        <a href={data.fields.link}>Learn More</a>
+        <a href={data.fields.link} target="_blank" rel="noopener noreferrer">
+          Learn More
+        </a>
       </div>
       <div className={styles.optionImg}>
         <img src={data.fields.image.fields.file.url} alt="" />

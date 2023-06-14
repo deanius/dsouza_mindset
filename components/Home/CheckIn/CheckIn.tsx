@@ -113,6 +113,7 @@ const CheckIn = () => {
     <div className={styles.checkIn}>
       <div className={styles.ui}>
         <h2>Mental Health Check-In</h2>
+        <h4>Got time for a quick check up?</h4>
         {!started ? (
           <div
             onClick={() => {
@@ -120,7 +121,7 @@ const CheckIn = () => {
               setIndex(1);
             }}
           >
-            <Button name="Get Started" location="" />
+            <Button name="Get Started" location="#:)" />
           </div>
         ) : (
           <div
@@ -129,7 +130,7 @@ const CheckIn = () => {
               setStarted(false);
             }}
           >
-            <Button name="Goodbye :)" location="" />
+            <Button name="Goodbye :)" location="#:)" />
           </div>
         )}
       </div>

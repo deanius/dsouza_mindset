@@ -15,7 +15,7 @@ const BlogPost = ({ post }: { post: any }) => {
       <div className="blogContain">
         <div className={styles.postInfo}>
           <div>
-            <h1>{post.fields.title}</h1>
+            <h2>{post.fields.title}</h2>
             <span>{post.fields.category}</span>
             <p className={styles.name}>Dean M. Dsouza</p>
             <p className={styles.date}>Published: {formattedDate}</p>
