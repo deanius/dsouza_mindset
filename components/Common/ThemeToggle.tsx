@@ -11,7 +11,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div onClick={handleToggle} style={{ display: 'flex', alignItems: 'center' }}>
+    <div className="theme-toggle" onClick={handleToggle} style={{ display: 'flex', alignItems: 'center' }}>
       <label className="Label" htmlFor="dark-mode" style={{ paddingRight: 15 }}>
       </label>
       <Switch.Root className="SwitchRoot" id="dark-mode" >
