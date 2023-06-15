@@ -46,7 +46,11 @@ const BlogIndex = ({
               <div className={styles.post} key={id}>
                 <div className={styles.titleContain}>
                   <img
-                    src={post.fields.image.fields.file.url}
+                    src={
+                      post?.fields?.image?.fields.file.url
+                        ? post.fields.image.fields.file.url
+                        : "http://thedeandsouzamindset.ctcin.bio/upload/969041612109977.JPG"
+                    }
                     alt="Blog Image"
                   />
                   <h3>{post.fields.title}</h3>

@@ -43,7 +43,14 @@ const GuideIndex = ({
             <>
               <div className={styles.post} key={id}>
                 <div className={styles.titleContain}>
-                  <img src={post.fields.image.fields.file.url} alt="ok" />
+                  <img
+                    src={
+                      post?.fields?.image?.fields.file.url
+                        ? post.fields.image.fields.file.url
+                        : "http://thedeandsouzamindset.ctcin.bio/upload/969041612109977.JPG"
+                    }
+                    alt="ok"
+                  />
                   <h3>{post.fields.title}</h3>
                 </div>
                 <div className={styles.postContent}>

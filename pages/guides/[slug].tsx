@@ -17,13 +17,22 @@ const GuidePost = ({ post }: { post: any }) => {
           <div>
             <h2>{post.fields.title}</h2>
             <span>{post.fields.category}</span>
-            <p className={styles.name}>Dean M. Dsouza</p>
             <p className={styles.date}>Published: {formattedDate}</p>
-            <Button name="Return to Guides" location="/guides"/>
+            <Button name="Return to Guides" location="/guides" />
           </div>
-          <img src={post.fields.image.fields.file.url} alt="" />
+          <img
+            src={
+              post?.fields?.image?.fields.file.url
+                ? post.fields.image.fields.file.url
+                : "http://thedeandsouzamindset.ctcin.bio/upload/969041612109977.JPG"
+            }
+            alt=""
+          />
         </div>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdown }} />
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{ __html: markdown }}
+        />
       </div>
     </Layout>
   );
