@@ -10,7 +10,7 @@ const SupportMeButtons = ({ active }: any) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Patreon
+        Patreon - Coming Soon
       </a>
       <a
         href="/hi"
@@ -18,7 +18,7 @@ const SupportMeButtons = ({ active }: any) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        GoFundMe
+        GoFundMe - Coming Soon
       </a>
       <a
         href="/hi"
@@ -26,7 +26,7 @@ const SupportMeButtons = ({ active }: any) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        My Wishlist
+        My Wishlist - Coming Soon
       </a>
     </div>
   );

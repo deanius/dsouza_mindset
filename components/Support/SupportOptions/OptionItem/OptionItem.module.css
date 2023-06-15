@@ -3,13 +3,13 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   border: 1px solid var(--border-color);
   border-radius: 8px;
 }
 
 .optionInfo {
-  max-width: 400px;
+  max-width: 65%;
 }
 
 .optionInfo h4 {
@@ -19,8 +19,7 @@
 .optionImg {
   width: 120px;
   height: 120px;
-  background-color: #999;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .optionImg img {
@@ -32,6 +31,7 @@
 
 .optionInfo p {
   margin: 1rem 0;
+  line-height: 1.85;
 }
 
 .optionInfo a {
