@@ -21,7 +21,6 @@ const GuidePost = ({ post }: { post: any }) => {
             <p className={styles.date}>Published: {formattedDate}</p>
             <Button name="Return to Guides" location="/guides"/>
           </div>
-
           <img src={post.fields.image.fields.file.url} alt="" />
         </div>
         <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdown }} />
