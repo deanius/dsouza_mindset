@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Activity.module.css";
 import Button from "../../Common/Buttons/Button";
+import Preview from "./Preview/Preview";
 
 const Activity = ({ data }: any) => {
   return (
@@ -15,7 +16,7 @@ const Activity = ({ data }: any) => {
             <div className={styles.itemInfo}>
               <h4>{data[0]!.fields.name}</h4>
               <span>{data[0]!.fields.type}</span>
-              <p>{data[0]!.fields.description}</p>
+              <Preview content={data[0]!.fields.description} />
               <a
                 href={data[0]!.fields.link}
                 target="_blank"
@@ -35,7 +36,7 @@ const Activity = ({ data }: any) => {
             <div className={styles.itemInfo}>
               <h4>{data[1]!.fields.name}</h4>
               <span>{data[1]!.fields.type}</span>
-              <p>{data[1]!.fields.description}</p>
+              <Preview content={data[1]!.fields.description} />
               <a
                 href={data[1]!.fields.link}
                 target="_blank"
@@ -57,7 +58,7 @@ const Activity = ({ data }: any) => {
             <div className={styles.itemInfo}>
               <h4>{data[2]!.fields.name}</h4>
               <span>{data[2]!.fields.type}</span>
-              <p>{data[2]!.fields.description}</p>
+              <Preview content={data[2]!.fields.description} />
               <a
                 href={data[2]!.fields.link}
                 target="_blank"
@@ -77,7 +78,7 @@ const Activity = ({ data }: any) => {
             <div className={styles.itemInfo}>
               <h4>{data[3]!.fields.name}</h4>
               <span>{data[3]!.fields.type}</span>
-              <p>{data[3]!.fields.description}</p>
+              <Preview content={data[3]!.fields.description} />
               <a
                 href={data[3]!.fields.link}
                 target="_blank"
