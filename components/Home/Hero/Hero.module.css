@@ -7,6 +7,15 @@
 
 .heroImg {
   border-radius: 12px;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 860px) {
+  .heroImg {
+    height: unset;
+  }
 }
 
 .heroInfo {
@@ -15,13 +24,17 @@
 }
 
 .heroInfo h1 {
-    font-size: 32px;
-  margin-bottom: 24px;
+    font-size: 31px;
+    font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.35;
 }
 
 @media screen and (min-width: 860px) {
   .heroInfo h1 {
     font-size: 38px;
+  margin-bottom: 24px;
+
   }
 }
 

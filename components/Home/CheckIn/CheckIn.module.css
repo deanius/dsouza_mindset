@@ -4,25 +4,36 @@
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 1rem;
   text-align: center;
 }
-
-
 
 .ui {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
   max-width: 480px;
-  height: 320px;
+  height: 280px;
   margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 860px) {
+  .checkIn {
+    margin-top: 6rem;
+  }
+
+  .ui {
+    height: 320px;
+    padding-bottom: unset;
+    justify-content: center;
+  }
 }
 
 .ui h2 {
   margin-bottom: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .ui h4 {
@@ -41,12 +52,15 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1rem;
 }
 
 @media screen and (min-width: 860px) {
   .checkIn {
     flex-direction: row;
     text-align: unset;
+  }
+
+  .cards {
+    padding: 1rem;
   }
 }

@@ -5,15 +5,18 @@ import ThemeToggle from "../../Common/ThemeToggle";
 import styles from "./Header.module.css";
 import NavMenu from "../NavMenu/NavMenu";
 import AvatarCpt from "../../Common/Avatar/Avatar";
+import Hamburger from "hamburger-react";
 
 const Header = (avatar: any) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log(avatar)
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <Link className={styles.logo} href="/">
         <AvatarCpt img={avatar} />
-        The Dean Dsouza Mindset
+        <p>The Dean Dsouza Mindset</p>
+        
       </Link>
       <Navbar />
       {menuOpen && <NavMenu setMenuOpen={setMenuOpen} />}
@@ -23,7 +26,7 @@ const Header = (avatar: any) => {
           setMenuOpen(!menuOpen);
         }}
       >
-        Menu
+        <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
       </div>
     </header>
   );

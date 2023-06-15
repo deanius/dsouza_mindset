@@ -5,21 +5,21 @@
   align-items: center;
   padding: 1.5rem 20px;
   margin-top: 2rem;
-  box-shadow: var(--shadow-color) 0px -1px 4px;
+  border-top: 1px solid var(--shadow-color);
   background-color: var(--bg-color);
 }
 
 @media screen and (min-width: 860px) {
   .footer {
     padding: 1.5rem 40px;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 }
 
 .footer ul {
   display: none;
   gap: 2.3rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 @media screen and (min-width: 860px) {
@@ -30,8 +30,8 @@
 
 .footer h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 800;
   margin-bottom: 0.85rem;
 }
 

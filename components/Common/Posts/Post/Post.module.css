@@ -1,43 +1,63 @@
 .postInfo {
-display: flex;
-justify-content: space-between;
-    font-size: 22px;
-margin-bottom: 4rem;
-font-weight: 600;
-padding: 0 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 22px;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 860px) {
+  .postInfo {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 6rem;
+  }
 }
 
 .postInfo h2 {
-    margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 .postInfo span {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    opacity: 0.65;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  opacity: 0.65;
 }
 
 .postInfo img {
-    border-radius: 8px;
-    max-width: 320px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .name {
-    margin-bottom: 1rem;
-    font-weight: 700;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .date {
-    opacity: 0.65;
-    font-size: 16px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .content {
-    line-height: 1.85;
+  line-height: 1.85;
 }
 
 .postInfo a {
-    display: block;
-    margin-top: 2rem;
+  display: block;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 860px) {
+  .postInfo img {
+    max-width: 320px;
+    margin-bottom: unset;
+  }
+
+  .postInfo span {
+    margin-bottom: 2rem;
+  }
 }

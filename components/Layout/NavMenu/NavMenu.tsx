@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./NavMenu.module.css";
+import ThemeToggle from "../../Common/ThemeToggle";
 
 const NavMenu = ({ setMenuOpen }: any) => {
   return (
@@ -36,13 +37,6 @@ const NavMenu = ({ setMenuOpen }: any) => {
           </Link>
         </li>
       </ul>
-      <div
-        onClick={() => {
-          setMenuOpen(false);
-        }}
-      >
-        close
-      </div>
     </nav>
   );
 };

@@ -4,8 +4,8 @@
 
 .post {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 20px;
   padding: 1.25rem;
   border: 1px solid var(--border-color);
@@ -21,28 +21,43 @@
 }
 
 .postContent {
-  display: none;
-  padding: 0 1rem;
-  width: 40%;
+  width: 100%;
   font-size: 15px;
   font-weight: 500;
   line-height: 1.85;
-}
-
-@media screen and (min-width: 860px) {
-  .postContent {
-    display: block;
-  }
+  margin-bottom: 1.5rem;
 }
 
 .titleContain {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .titleContain h3 {
   width: 240px;
-  margin-left: 40px;
-  font-weight: 700;
+  margin-left: 32px;
+  font-weight: 800;
   line-height: 1.65;
+}
+
+@media screen and (min-width: 860px) {
+  .post {
+    flex-direction: row;
+    align-items: center;
+  }
+  .titleContain {
+    justify-content: unset;
+  }
+
+  .titleContain h3 {
+    margin-left: 40px;
+  }
+
+  .postContent {
+    padding: 0 1rem;
+    width: 40%;
+    margin: unset;
+  }
 }

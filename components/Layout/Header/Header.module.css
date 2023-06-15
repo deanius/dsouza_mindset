@@ -4,18 +4,39 @@
   left: 0;
   width: 100%;
   background-color: var(--bg-color);
+  border-bottom: 1px solid var(--shadow-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 20px;
-  box-shadow: var(--shadow-color) 0px 1px 4px;
+  padding: 1.5rem 16px;
   z-index: 1000;
 }
 
 .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+  width: 380px;
+  z-index: 1000;
+}
+
+.logo p {
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 860px) {
+  .logo {
+    font-size: 1.25rem;
+    width: unset;
+  }
+
+  .logo p {
+    padding-left: unset;
+  }
 }
 
 .themeToggle {
@@ -32,6 +53,7 @@
 .hamburger {
   display: none;
   cursor: pointer;
+  z-index: 1000;
 }
 
 @media screen and (min-width: 860px) {
