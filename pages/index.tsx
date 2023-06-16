@@ -63,7 +63,6 @@ export default function Home({ hero, activity, avatar }: any) {
           </div>
         </div>
       </div>
-      <Scroller />
     </Layout>
   );
 }
