@@ -42,7 +42,7 @@ const About = ({ about }: any) => {
         <div className="form-inner">
           <ContactForm
             serviceId="service_h7oepbj"
-            templateId="template_2upgo0k"
+            templateId="service_f5ribc7"
             userId="eGMCIdPiH-R_XjZbK"
           />
           <Socials />
