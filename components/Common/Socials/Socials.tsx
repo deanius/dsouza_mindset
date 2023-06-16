@@ -80,7 +80,7 @@ const Socials = () => {
           </a>
         </li>
       </ul>
-      <a className={styles.direct} href="mailto:deandsouza15892@gmail.com">
+      <a className={styles.direct} href="mailto:dsouzadean@yahoo.com">
         Contact me Directly
       </a>
     </div>
