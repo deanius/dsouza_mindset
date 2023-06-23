@@ -29,11 +29,17 @@ It's recommended that you ground yourself and be aware of your surroundings. Unf
 Here are some things that have helped me:
 
 - Take a nice, long walk without music. Pay attention to your environment, embrace the weather and the sounds. You're alive and walking. Let that feeling sink in.
+
 - Draw yourself a bath. Use some warm water, incense or candles, a good podcast or playlist, and anything else you need to feel completely soothed.
+
 - Do grounding or breathing exercises (attach YouTube link). Breathe in as you count to 4, hold your breath for 4 seconds, and exhale for 5 seconds. Repeat.
+
 - Drink some tea. If you can get yourself to a nice café, even better, but if not, boil some water and make yourself a glass of tea. In the words of Arthur Wing Pinero - *"Where there's tea, there's hope."*
+
 - Masturbate. It's healthy, it's simple, and easy enough to do. You'll feel relaxed once you're done. Post-nut clarity is a real thing.
+
 - Take a nap. Napping is hard when I'm stressed because my mind doesn't shut up, but if you can get some shut-eye, it's a great way to reset yourself.
+
 - Get some animal therapy. If you have a friend with a cat or a dog or anything else, spend time with them. Animals understand what we go through and often know how to counterbalance it.
 
 
@@ -60,12 +66,19 @@ I struggle with depression too. It can be chronic or catch you off guard, but wh
 Over time, I've found a few ways to bring myself back to a regular mental state when I feel depression creeping in.
 
 - Get out of bed. I know it's hard; staying in bed and doom-scrolling seems so ideal right now, but getting your body moving is essential. The hardest part is getting up; after that, take it one step at a time. I believe in you, and I'm rooting for you!
+
 - Take care of yourself. Depression can make it easy to forget about self-care, including eating and hygiene. Take a shower, wash your face, shave, brush your teeth. When you look good, you feel good. You'll also feel proud of yourself for putting in the effort and more confident to tackle what you want.
+
 - Eat your favorite food. Try to choose healthy options, but if you're craving that cheesecake, go for it. Just make sure to moderate and not replace your emotions with food.
+
 - Take care of your loved ones. I know it can be challenging, especially if you live with family and have family issues. However, surrounding yourself with people you love can make you feel so much better. This can even extend to friends or pets.
+
 - Take your meds. I know it can feel like they're not working, or even pointless. But not taking your medication might make you feel worse. Write it on your mirror, put post-it notes, set an alarm, have a family member or friend remind you. Make it a habit.
+
 - Reach out, ask for help. You'll be surprised at how many people respond. One of the hardest decisions I had to make when dealing with depression was talking to my friends about it and admitting I needed help. I was amazed by how validated I felt when my friends started sharing their stories as well, and it made me feel less alone. You're human, and what you're feeling is very human. If you can convey this to other humans, it will likely calm you down and give you hope to move forward.
+
 - Acknowledge your progress. You've come a long way, and it's easy to forget that when you're feeling depressed. You're not a loser, and you're not a failure. You're a survivor. You've survived the worst that life has thrown at you so far and will continue to do so. A few years ago, you could only dream of where you are now. Let that sink in.
+
 - Journal. When your mind is full, writing is the best medicine. Take a pen and paper and just get all your thoughts out. Avoid technology for this; go old-school. Just write whatever you want, however long you want. Get it all out.
 
 Overall, depression and fatigue are tough to battle. Oftentimes, no one will truly understand what you're going through. However, I want you to know that I do. While I won't claim to know exactly how you're feeling, I have felt a semblance of it many times in life. Remember that you are not alone, and there is always hope for recovery.
@@ -84,26 +97,36 @@ All of these are questions you should ask yourself when you're spiraling out of 
 If you feel your anxiety getting worse, here are a few ideas on how to manage it:
 
 - Box Breathing - Breathe for 4 counts, hold for 4 counts, release for 4 counts. Even your breathing pace, and your heart will soon follow. It calms you down in the moment and equips you to address your feelings.
+
 - Play the name game - Give your brain a fun activity. Try to name 5 things you can see, 4 things you can hear, 3 things you can smell, 2 things you can touch, and 1 thing you can feel. It's a fun way to distract yourself from your thoughts and give your senses something else to focus on.
+
 - Assign characters to your thoughts - A common practice is to listen to your thoughts in funny voices. Most people start with Mickey Mouse. When you get anxious thoughts, train them to be heard through sounds that you find ridiculous. It highlights how ridiculous those thoughts are and makes it easier for you to ignore them. I promise you, I laughed at this method, but once I started giving my thoughts personalities, it got a lot easier to identify where they're coming from.
 
 As you're doing this, remember to focus on your triggers. Here are a few common triggers for anxiety:
 
 - A stressful work environment
+
 - School or college assignments or exams
+
 - Genetics - anxiety could run in your family
+
 - Side effects from certain medications
+
 - A trauma response
+
 - Exposure to a phobia, such as agoraphobia (fear of crowds or open spaces) or claustrophobia (fear of tight, compact spaces)
+
 - A chronic illness
+
 - Excessive stimulant consumption like coffee or energy drinks
+
 - Marijuana or mind-altering drugs (psychedelics)
 
 I've found meditation to be a very helpful medium for navigating anxiety. It takes some time to believe in it, but a good meditation practice can work wonders.
 
 You can also try guided meditations; here are a few options:
 
-** Add sources **
+https://www.youtube.com/watch?v=Jyy0ra2WcQQ
 
 It's important to remember that anxiety attacks and panic attacks are two different things. Having experienced both of them in my life, they can have similar symptoms but show up very differently.
 
