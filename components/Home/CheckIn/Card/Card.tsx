@@ -2,20 +2,20 @@ import React, { useEffect, useState } from "react";
 import styles from "./Card.module.css";
 import { marked } from "marked";
 
-const intro = `Thank you for taking the time. 
+const intro = `<p>Thank you for taking the time. 
 
 Checking in with your mental health is so essential and often overlooked. 
 
-How are you feeling today?`;
+How are you feeling today?</p>`;
 
-const help = `When in doubt, never be afraid to seek help.  
+const help = `<p>When in doubt, never be afraid to seek help.  
 If you or a friend are ever in need, there are support systems in place that you can use.
 
 > 💡 Please do keep in mind that certain hotlines may end up in the police being sent to the caller's house. This may put the person in more danger, depending on the situation. This shouldn't be a reason to not make a call; it's simply providing situational awareness.
 
 Depending on your country of residence, there are different options and numbers to call.
 
-[Get Help](https://www.psycom.net/get-help-mental-health) provides a thorough list of information for those in a mental health crisis.
+<a href"https://www.psycom.net/get-help-mental-health" target="_blank">Get Help</a> provides a thorough list of information for those in a mental health crisis.</p>
 `;
 
 const overwhelmed = `It's natural to feel overwhelmed from time to time. The world around you is so chaotic all the time. Trust me, you're not being dramatic.
@@ -222,7 +222,7 @@ const Card = ({
     <div className={styles.card}>
       {index > 0 && (
         <>
-          <div id="markdown-content"></div>
+          <div id="markdown-content" dangerouslySetInnerHTML={{ __html: markdown }}></div>
           {response1 && (
             <div className={styles.options}>
               <span
@@ -231,7 +231,7 @@ const Card = ({
                   setIndex(response1.location);
                 }}
               >
-                {response1.text}
+              {response1.text} 
               </span>
               <span
                 className={styles.option}
