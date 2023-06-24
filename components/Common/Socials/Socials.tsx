@@ -47,7 +47,7 @@ const Socials = () => {
           </svg>
 
           <a
-            href="https://www.tiktok.com/t/ZTdWu6k7s/"
+            href="https://www.tiktok.com/@thedeandsouzamindset"
             target="_blank"
             rel="noopener noreferrer"
           >
