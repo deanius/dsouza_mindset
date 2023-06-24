@@ -15,7 +15,7 @@ If you or a friend are ever in need, there are support systems in place that you
 
 Depending on your country of residence, there are different options and numbers to call.
 
-<a href="https://www.psycom.net/get-help-mental-health" target="_blank">Get Help</a> provides a thorough list of information for those in a mental health crisis.</p>
+<a href="https://www.psycom.net/get-help-mental-health" target="_blank">This link</a> provides a thorough list of information for those in a mental health crisis.</p>
 `;
 
 const overwhelmed = `It's natural to feel overwhelmed from time to time. The world around you is so chaotic all the time. Trust me, you're not being dramatic.
@@ -32,7 +32,7 @@ Here are some things that have helped me:
 
 - Draw yourself a bath. Use some warm water, incense or candles, a good podcast or playlist, and anything else you need to feel completely soothed.
 
-- Do grounding or breathing exercises (attach YouTube link). Breathe in as you count to 4, hold your breath for 4 seconds, and exhale for 5 seconds. Repeat.
+- Do <a href="https://www.youtube.com/watch?v=FJJazKtH_9I" target="_blank">grounding or breathing exercises</a>. Breathe in as you count to 4, hold your breath for 4 seconds, and exhale for 5 seconds. Repeat.
 
 - Drink some tea. If you can get yourself to a nice café, even better, but if not, boil some water and make yourself a glass of tea. In the words of Arthur Wing Pinero - *"Where there's tea, there's hope."*
 
@@ -49,7 +49,7 @@ The important takeaway to remember is that you will get past this. However inten
 
 You're doing great, and I'm so proud of you!
 
-And if you can't take it from me, maybe the [God of Thunder can help](https://www.youtube.com/watch?v=QfySIkxdBDw).`;
+And if you can't take it from me, maybe the <a href="https://www.youtube.com/watch?v=QfySIkxdBDw" target="_blank">God of Thunder can help</a>.`;
 
 const depressed = `Some days, getting out of bed is the last thing you want to do. I've been there. I probably was there last week. But let me tell you something: you're not lazy, and you're not a failure.
 
@@ -92,15 +92,23 @@ const scared = `Anxiety is a conniving little devil; it can sneak up on you when
 - How is your anxiety manifesting itself through your body?
 - How would you label the emotion you're feeling right now?
 
+
 All of these are questions you should ask yourself when you're spiraling out of control. Trust me, it gets easier the more you do it.
 
 If you feel your anxiety getting worse, here are a few ideas on how to manage it:
 
-- Box Breathing - Breathe for 4 counts, hold for 4 counts, release for 4 counts. Even your breathing pace, and your heart will soon follow. It calms you down in the moment and equips you to address your feelings.
+- <a href="https://www.youtube.com/watch?v=FJJazKtH_9I" target="_blank">Box Breathing</a> - Breathe for 4 counts, hold for 4 counts, release for 4 counts. Even your breathing pace, and your heart will soon follow. It calms you down in the moment and equips you to address your feelings.
 
-- Play the name game - Give your brain a fun activity. Try to name 5 things you can see, 4 things you can hear, 3 things you can smell, 2 things you can touch, and 1 thing you can feel. It's a fun way to distract yourself from your thoughts and give your senses something else to focus on.
+- Play the name game - Give your brain a fun activity. 
+  Try to name 
+      - 5 things you can see
+      - 4 things you can hear
+      - 3 things you can smell
+      - 2 things you can touch
+      - 1 thing  you can feel 
+  It's a fun way to distract yourself from your thoughts and give your senses something else to focus on.
 
-- Assign characters to your thoughts - A common practice is to listen to your thoughts in funny voices. Most people start with Mickey Mouse. When you get anxious thoughts, train them to be heard through sounds that you find ridiculous. It highlights how ridiculous those thoughts are and makes it easier for you to ignore them. I promise you, I laughed at this method, but once I started giving my thoughts personalities, it got a lot easier to identify where they're coming from.
+- Assign characters to your thoughts. A common practice is to listen to your thoughts in funny voices. Most people start with Mickey Mouse. When you get anxious thoughts, train them to be heard through sounds that you find ridiculous. It highlights how ridiculous those thoughts are and makes it easier for you to ignore them. I promise you, I laughed at this method, but once I started giving my thoughts personalities, it got a lot easier to identify where they're coming from.
 
 As you're doing this, remember to focus on your triggers. Here are a few common triggers for anxiety:
 
@@ -124,15 +132,13 @@ As you're doing this, remember to focus on your triggers. Here are a few common 
 
 I've found meditation to be a very helpful medium for navigating anxiety. It takes some time to believe in it, but a good meditation practice can work wonders.
 
-You can also try guided meditations; here are a few options:
-
-- <a href="https://www.youtube.com/watch?v=Jyy0ra2WcQQ" target="_blank">Youtube - 18 minutes</a>  
+You can also try <a href="https://www.youtube.com/watch?v=Jyy0ra2WcQQ" target="_blank">a guided meditation</a>
 
 It's important to remember that anxiety attacks and panic attacks are two different things. Having experienced both of them in my life, they can have similar symptoms but show up very differently.
 
-During these attacks, it's normal to feel a sense of dread or fear, a pounding heart, difficulty breathing, chest pain, lightheadedness, and irrational thoughts. Anxiety attack symptoms usually intensify over time, while a panic attack seems to come all at once. Here's how to distinguish between them:
+During these attacks, it's normal to feel a sense of dread or fear, a pounding heart, difficulty breathing, chest pain, lightheadedness, and irrational thoughts. Anxiety attack symptoms usually intensify over time, while a panic attack seems to come all at once.
 
-** Add sources **
+Here's <a href="https://www.healthline.com/health/panic-attack-vs-anxiety-attack#diagnosis" target="_blank">a link</a> on how to distinguish between them. 
 
 How do you calm yourself during an anxiety or panic attack?
 
@@ -149,7 +155,7 @@ Most importantly, tell yourself that you are okay. It will be okay. Promise your
 
 const numb = `This happens to me a lot too - feeling like you're nowhere, like you're apathetic, in a state of emotional and mental numbness. This can sometimes be a result of burnout - when you overextend yourself and then just burn through your energy. These types of feelings affect your ability to keep a job, maintain relationships, and enjoy life.
 
-Everyone experiences numbness from time to time. It's called situational apathy, and it's completely normal. You are not broken.
+Everyone experiences numbness from time to time. It's called <b>situational apathy</b>, and it's completely normal. You are not broken.
 
 If you want to get out of this, you have to give your mind new memories and emotions to latch onto. You can start by getting out of bed and walking around your room. Motivation isn’t something to wait for; it's something to work for. Get yourself moving and give your brain fun exercises.
 
@@ -161,7 +167,7 @@ A support system is also key. I am often very honest with my support system, and
 
 If you're feeling lost about where you are in life, then it's time to get off social media. Don't compare your insides with other people's outsides. All you see is their highlight reel, and you don't need that when you're feeling lost. Remember, life is long, and it is never too late to find what you're meant to do. I discovered what I wanted to do at 27, and by 30, I was more lost than I was before. But I learned to enjoy it. Enjoy the feeling of not knowing your next move and just traversing through life. It's very humbling.
 
-Here's a video I often revisit when I feel hopeless - it's called "[Wear Sunscreen.](https://www.youtube.com/watch?v=KdQbb3FXSEI)"
+Here's a video I often revisit when I feel hopeless - it's called <a href="https://www.youtube.com/watch?v=KdQbb3FXSEI" target="_blank">Wear Sunscreen</a>
 
 I hope you feel a little more confident now. You’re an amazing human being, and I believe in you.`;
 
@@ -169,20 +175,21 @@ const positive = `That's amazing! We all like to feel positive everyone once in 
 
 When I want to feel positive, I try to look at the achievements of humans and how far we’ve come. We can all be proud of humanity's accomplishments because it's a representation of us. It inspires us to be better and do better.
 
-Here's one of [my favorite YouTube videos](https://www.youtube.com/watch?v=Y0Zq6Q2m-ig) of a couple who took a drone on their honeymoon for an amazing project. It reminds me how much of this gorgeous planet is left to explore and how much I have to live for.
+Here's one of <a href="https://www.youtube.com/watch?v=Y0Zq6Q2m-ig" target="_blank">my favorite YouTube videos</a> of a couple who took a drone on their honeymoon for an amazing project. It reminds me how much of this gorgeous planet is left to explore and how much I have to live for.
 
-If you're looking for good reading material, why not try [Good News Network](https://www.goodnewsnetwork.org/more/about-us/)? It's a news media outlet that only focuses on the good out there because, let's face it, you're in no shortage of negative, hate-filled media. They've been publishing good news since 1997, so there's plenty of content to rebuild your faith.
+If you're looking for good reading material, why not try <a href="https://www.goodnewsnetwork.org/more/about-us/" target="_blank">Good News Network</a> ? It's a news media outlet that only focuses on the good out there because, let's face it, you're in no shortage of negative, hate-filled media. They've been publishing good news since 1997, so there's plenty of content to rebuild your faith.
 
 If you're looking for books, I'd recommend:
 
-- [Furiously Happy](https://www.goodreads.com/book/show/23848559-furiously-happy?ref=nav_sb_ss_1_12) - A ridiculously funny book about a woman who is determined to make herself happy no matter what the universe throws at her
-- [Greenlights](https://www.goodreads.com/book/show/52838315-greenlights?ac=1&from_search=true&qid=D3jJ1hwU2q&rank=1) - Matthew McConaughey covers the early years of his adolescence and adulthood, following a simple philosophy - *"Just keep livin'."*
+- <a href="https://www.goodreads.com/book/show/23848559-furiously-happy?ref=nav_sb_ss_1_12" target="_blank">Furiously Happy </a> - A ridiculously funny book about a woman who is determined to make herself happy no matter what the universe throws at her
+
+- <a href="https://www.goodreads.com/book/show/52838315-greenlights?ac=1&from_search=true&qid=D3jJ1hwU2q&rank=1" target="_blank">Greenlights </a> - Matthew McConaughey covers the early years of his adolescence and adulthood, following a simple philosophy - *"Just keep livin'."*
 
 Compliments are an excellent way for you to share the love. Tell your friends what you love about them. Tell your parents and your siblings that you love them. Give a compliment to a stranger at the bus stop or a coffee shop. Kind words lead to a warm heart.
 
 You can also embrace the act of gift-giving. Know a friend whose birthday is coming up? Search for some fun gifts for them. Humans can surprisingly justify the cost of something if they know it’ll make someone’s day, so go ahead and spend. Make someone's day. The love will return to you tenfold. If you’re short of cash, why not write a postcard? I recently started sending my friends postcards, and it's honestly such a fun exercise, and you can look forward to them receiving it.
 
-If you want to write to yourself, then try [FutureMe.org](https://www.futureme.org/). I use this at least twice a year. You can send letters to your future self. Its an amazingly reliable way of self-reflection. 
+If you want to write to yourself, then try a href="https://www.futureme.org/" target="_blank">FutureMe.org </a>. I use this at least twice a year. You can send letters to your future self. Its an amazingly reliable way of self-reflection. 
 
 If you want to feel the love in person, volunteering is a great step. Look at youth shelters, soup kitchens, food banks, festivals coming up. Get to know your community and the people around you. Become a foster parent to some animals, or a big brother/big sister mentor for kids without role models. You can make a difference. Just start small and watch the ripple effect of your decisions spread through humanity.
 
