@@ -15,7 +15,7 @@ If you or a friend are ever in need, there are support systems in place that you
 
 Depending on your country of residence, there are different options and numbers to call.
 
-<a href"https://www.psycom.net/get-help-mental-health" target="_blank">Get Help</a> provides a thorough list of information for those in a mental health crisis.</p>
+<a href="https://www.psycom.net/get-help-mental-health" target="_blank">Get Help</a> provides a thorough list of information for those in a mental health crisis.</p>
 `;
 
 const overwhelmed = `It's natural to feel overwhelmed from time to time. The world around you is so chaotic all the time. Trust me, you're not being dramatic.
