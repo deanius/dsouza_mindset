@@ -126,7 +126,7 @@ I've found meditation to be a very helpful medium for navigating anxiety. It tak
 
 You can also try guided meditations; here are a few options:
 
-- [Youtube - 18 minutes](https://www.youtube.com/watch?v=Jyy0ra2WcQQ)
+- <a href="https://www.youtube.com/watch?v=Jyy0ra2WcQQ" target="_blank">Youtube - 18 minutes</a>  
 
 It's important to remember that anxiety attacks and panic attacks are two different things. Having experienced both of them in my life, they can have similar symptoms but show up very differently.
 
