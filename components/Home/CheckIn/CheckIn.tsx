@@ -113,7 +113,9 @@ const CheckIn = () => {
     <div className={styles.checkIn}>
       <div className={styles.ui}>
         <h2>Mental Health Check-In</h2>
-        <h4>Got time for a quick check up?</h4>
+        <h4>Take a moment to check in with yourself, 
+          prioritize your mental well-being, 
+          and nurture your inner peace.</h4>
         {!started ? (
           <div
             onClick={() => {
@@ -130,7 +132,7 @@ const CheckIn = () => {
               setStarted(false);
             }}
           >
-            <Button name="Goodbye :)" location="#:)" />
+            <Button name="I'm good, thank you" location="#:)" />
           </div>
         )}
       </div>
@@ -143,7 +145,7 @@ const CheckIn = () => {
               setStarted(true)
             }}
           >
-            <Card alert="Welcome, click here to begin!" />
+            <Card alert="Welcome, click here to begin your mental health check-in" />
           </div>
         )}
         {started && (
