@@ -132,7 +132,7 @@ As you're doing this, remember to focus on your triggers. Here are a few common 
 
 I've found meditation to be a very helpful medium for navigating anxiety. It takes some time to believe in it, but a good meditation practice can work wonders.
 
-You can also try <a href="https://www.youtube.com/watch?v=Jyy0ra2WcQQ" target="_blank">a guided meditation</a>
+You can also try <a href="https://www.youtube.com/watch?v=Jyy0ra2WcQQ" target="_blank">a guided meditation</a>.
 
 It's important to remember that anxiety attacks and panic attacks are two different things. Having experienced both of them in my life, they can have similar symptoms but show up very differently.
 
@@ -189,7 +189,7 @@ Compliments are an excellent way for you to share the love. Tell your friends wh
 
 You can also embrace the act of gift-giving. Know a friend whose birthday is coming up? Search for some fun gifts for them. Humans can surprisingly justify the cost of something if they know it’ll make someone’s day, so go ahead and spend. Make someone's day. The love will return to you tenfold. If you’re short of cash, why not write a postcard? I recently started sending my friends postcards, and it's honestly such a fun exercise, and you can look forward to them receiving it.
 
-If you want to write to yourself, then try a href="https://www.futureme.org/" target="_blank">FutureMe.org </a>. I use this at least twice a year. You can send letters to your future self. Its an amazingly reliable way of self-reflection. 
+If you want to write to yourself, then try <a href="https://www.futureme.org/" target="_blank">FutureMe.org </a>. I use this at least twice a year. You can send letters to your future self. Its an amazingly reliable way of self-reflection. 
 
 If you want to feel the love in person, volunteering is a great step. Look at youth shelters, soup kitchens, food banks, festivals coming up. Get to know your community and the people around you. Become a foster parent to some animals, or a big brother/big sister mentor for kids without role models. You can make a difference. Just start small and watch the ripple effect of your decisions spread through humanity.
 
