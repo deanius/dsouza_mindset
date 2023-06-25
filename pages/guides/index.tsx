@@ -32,7 +32,7 @@ const GuideIndex = ({
     <Layout title="The Dean Dsouza Mindset - Guides">
       <div className="blogContain">
         <h1>Guides</h1>
-        <p className="subheading">A treasure trove of life advice.</p>
+        <p className="subheading">Here you will find a treasure trove of life advice, broken down into categories and listicles</p>
         <Dropdown
           categories={categories}
           activeCategory={activeCategory}
