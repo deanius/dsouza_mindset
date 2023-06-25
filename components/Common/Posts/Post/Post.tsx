@@ -28,10 +28,10 @@ const Post = ({
         <img src={img} alt="ok" />
         <h3>{title}</h3>
       </div>
-      <div className={styles.postContent}>{preview}</div>
       <div className={styles.readingTime}>
         {calculateReadingTime(content)}
       </div>
+      <div className={styles.postContent}>{preview}</div>
       <Button name="Read More" location={`/blog/${slug}`} />
     </div>
   );
