@@ -9,7 +9,7 @@ const Post = ({
   category,
   content,
   img,
-  preview,
+  readingTime,
   date,
   slug,
 }: any) => {
