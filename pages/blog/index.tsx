@@ -33,8 +33,8 @@ const BlogIndex = ({
       <div className="blogContain">
         <h1>Blog</h1>
         <p className="subheading">
-          Welcome to my blog. You'll find a collection of my thoughts and opinions on various aspects
-          of life. Click the 'Categories' button to filter posts by a category of your choice.
+          Welcome to my blog. You&apos;ll find a collection of my thoughts and opinions on various aspects
+          of life. Click the &apos;Categories&apos; button to filter posts by a category of your choice.
         </p>
         <Dropdown
           categories={categories}

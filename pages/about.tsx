@@ -26,7 +26,7 @@ const About = ({ about }: any) => {
     <Layout title="The Dean Dsouza Mindset - About">
       <div className="aboutText">
         <h1>About Me</h1>
-        <p className="subheading">Here's a little FAQ section about who I am, and why I do this</p>
+        <p className="subheading">Here&apos;s a little FAQ section about who I am, and why I do this</p>
         {about.map((about: any) => (
           <>
             <AboutSection
