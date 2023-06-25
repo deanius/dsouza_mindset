@@ -42,6 +42,13 @@
   line-height: 1.65;
 }
 
+.readingTime {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (min-width: 860px) {
   .post {
     flex-direction: row;
@@ -59,12 +66,5 @@
     padding: 0 1rem;
     width: 40%;
     margin: unset;
-  }
-
-  .readingTime {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
   }
 }
