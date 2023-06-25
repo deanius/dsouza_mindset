@@ -29,9 +29,9 @@ const Post = ({
         <h3>{title}</h3>
       </div>
       <div className={styles.postContent}>{preview}</div>
-      <p className={styles.readingTime}>
+      <div className={styles.readingTime}>
         {calculateReadingTime(content)}
-      </p>
+      </div>
       <Button name="Read More" location={`/blog/${slug}`} />
     </div>
   );
