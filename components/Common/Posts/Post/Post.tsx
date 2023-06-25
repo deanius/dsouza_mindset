@@ -13,6 +13,14 @@ const Post = ({
   date,
   slug,
 }: any) => {
+  const calculateReadingTime = (text: string): string => {
+    // Assuming an average reading speed of 200 words per minute
+    const wordsPerMinute = 200;
+    const words = text.split(" ");
+    const readingTime = Math.ceil(words.length / wordsPerMinute);
+
+    return `${readingTime} minute read`;
+  };
   console.log(slug)
   return (
     <div className={styles.post} key={id}>
@@ -21,6 +29,9 @@ const Post = ({
         <h3>{title}</h3>
       </div>
       <div className={styles.postContent}>{preview}</div>
+      <p className={styles.readingTime}>
+        {calculateReadingTime(content)}
+      </p>
       <Button name="Read More" location={`/blog/${slug}`} />
     </div>
   );
