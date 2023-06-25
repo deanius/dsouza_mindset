@@ -88,7 +88,9 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
       </div>
       <button className={styles.submitButton} type="submit">Submit</button>
       {submitted && ( // Render the message if submitted is true
-        <p>Thank you for reaching out. I appreciate any and all feedback. I hope you have an amazing day</p>
+        <div className={styles.messageBox}>
+          <p className={styles.message}>Thank you for reaching out. I appreciate any and all feedback. I hope you have an amazing day</p>
+        </div>
       )}
     </form>
   );
