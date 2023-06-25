@@ -31,8 +31,7 @@ const Post = ({
       <div className={styles.readingTime}>
         {calculateReadingTime(content)}
       </div>
-      <div className={styles.postContent}>{preview}</div>
-      <Button name="Read More" location={`/blog/${slug}`} />
+      <Button name="Read" location={`/blog/${slug}`} />
     </div>
   );
 };
