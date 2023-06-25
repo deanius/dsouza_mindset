@@ -15,6 +15,7 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
   const [message, setMessage] = useState("");
   const [subscription, setSubscription] = useState(false);
   const [status, setStatus] = useState("");
+  const [submitted, setSubmitted] = useState(false); // Track submission status
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -34,6 +35,7 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
         setEmail("");
         setMessage("");
         setSubscription(false);
+        setSubmitted(true); // Set submission status to true
       },
       (error) => {
         console.error(error);
@@ -85,6 +87,9 @@ const ContactForm = ({ serviceId, templateId, userId }: ContactFormProps) => {
         ></textarea>
       </div>
       <button className={styles.submitButton} type="submit">Submit</button>
+      {submitted && ( // Render the message if submitted is true
+        <p>Thank you for reaching out. I appreciate any and all feedback. <br>I hope you have an amazing day</br></p>
+      )}
     </form>
   );
 };
