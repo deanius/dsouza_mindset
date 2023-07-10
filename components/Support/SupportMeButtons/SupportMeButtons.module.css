@@ -18,6 +18,10 @@
   opacity: 0.65;
 }
 
+.wishlist {
+  background-color: #ff9900;
+}
+
 .patreon {
   background-color: #052d49;
 }
@@ -26,6 +30,3 @@
   background-color: #5ea800;
 }
 
-.wishlist {
-  background-color: #ff9900;
-}
