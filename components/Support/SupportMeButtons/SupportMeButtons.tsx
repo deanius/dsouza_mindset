@@ -21,12 +21,12 @@ const SupportMeButtons = ({ active }: any) => {
         GoFundMe - Coming Soon
       </a>
       <a
-        href="/hi"
+        href="https://wishlist.com/l/gZkpZN"
         className={styles.wishlist}
         target="_blank"
         rel="noopener noreferrer"
       >
-        My Wishlist - Coming Soon
+        My Wishlist
       </a>
     </div>
   );
