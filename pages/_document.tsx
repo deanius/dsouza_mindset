@@ -15,14 +15,37 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
           />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
-              heap.load("2151964733");
-            `,
-          }}
-        />
+        <script type="text/javascript">
+          (window as any).heap = (window as any).heap || [];
+          (window as any).heap.load = function(e, t) {
+            (window as any).heap.appid = e;
+            (window as any).heap.config = t = t || {};
+            var r = document.createElement("script");
+            r.type = "text/javascript";
+            r.async = true;
+            r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(r, a);
+            for (var n = function(e) {
+              return function() {
+                (window as any).heap.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+              };
+            }, p = [
+              "addEventProperties",
+              "addUserProperties",
+              "clearEventProperties",
+              "identify",
+              "resetIdentity",
+              "removeEventProperty",
+              "setEventProperties",
+              "track",
+              "unsetEventProperty"
+            ], o = 0; o < p.length; o++) {
+              (window as any).heap[p[o]] = n(p[o]);
+            }
+          };
+          (window as any).heap.load("2030498661");
+        </script>
         </Head>
         <body>
           <Main />
