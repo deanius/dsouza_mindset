@@ -12,6 +12,20 @@ const Mission = () => {
       Through our platform, we strive to dismantle the stigma surrounding <b>mental health</b> and advocate for the exploration of <b>vulnerabilities</b>,
       as we believe it is a path towards personal growth and resilience. Join us as we embark on a transformative journey of self-discovery and embrace the beauty of being human.
       </p>
+      <h3> Disclaimer</h3>
+      <p>I am not a licensed mental health professional, psychologist, or psychiatrist. 
+        The information and suggestions provided on this website are entirely anecdotal and based solely on my personal experiences. 
+        They are not intended as professional advice, diagnosis, or treatment for any mental health condition.
+      </p>
+      <p>
+        The content on this website is purely informational and should not be considered a substitute for seeking professional help or advice. 
+        If you are experiencing mental health issues or concerns, 
+        I strongly encourage you to consult a qualified mental health professional or healthcare provider.
+      </p>
+      <p>
+        By using this website and its content, you acknowledge and agree that any actions you take based on the information provided are at your own risk. 
+        I disclaim any liability or responsibility for any damages or losses resulting from your use of this website or reliance on its content.
+      </p>
     </div>
   );
 };
