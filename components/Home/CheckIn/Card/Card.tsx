@@ -4,7 +4,11 @@ import { marked } from "marked";
 
 const intro = `<p>Thank you for taking the time. 
 
-Checking in with your mental health is so essential and often overlooked. 
+Checking in with your mental health is so essential and often overlooked.
+Remember, seeking professional help is vital.
+I am here to provide information and support to complement, not replace, the expertise of qualified mental health professionals.
+
+If you are in crisis or experiencing an emergency, please contact emergency services or a mental health helpline immediately.
 
 How are you feeling today?</p>`;
 
