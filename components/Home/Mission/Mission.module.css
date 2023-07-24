@@ -22,3 +22,11 @@
 .mission p {
   opacity: 0.87;
 }
+
+.mission {
+  text-align: left;
+}
+
+.mission h3 {
+  text-align: left;
+}
