@@ -12,7 +12,7 @@ const Mission = () => {
       Through our platform, we strive to dismantle the stigma surrounding <b>mental health</b> and advocate for the exploration of <b>vulnerabilities</b>,
       as we believe it is a path towards personal growth and resilience. Join us as we embark on a transformative journey of self-discovery and embrace the beauty of being human.
       </p>
-      <h3> Disclaimer</h3>
+      <h3> <p style={{ fontSize: "12px" }}>Disclaimer</p></h3>
       <p style={{ fontSize: "10px" }}>
         I am not a licensed mental health professional, psychologist, or psychiatrist. 
         The information and suggestions provided on this website are entirely anecdotal and based solely on my personal experiences. 

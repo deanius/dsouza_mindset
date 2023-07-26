@@ -4,12 +4,15 @@ import { marked } from "marked";
 
 const intro = `<p>Thank you for taking the time. 
 
+How are you feeling today?
+
+<p style={{ fontSize: "12px" }}></p>
 Checking in with your mental health is so essential and often overlooked.
 Remember, seeking professional help is vital, and I am here to provide information and support to complement, not replace, the expertise of qualified mental health professionals.
 
 If you are in crisis or experiencing an emergency, please contact emergency services or a mental health helpline immediately.
 
-How are you feeling today?</p>`;
+</p>`;
 
 const help = `<p>When in doubt, never be afraid to seek help.  
 If you or a friend are ever in need, there are support systems in place that you can use.
