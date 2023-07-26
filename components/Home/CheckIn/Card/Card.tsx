@@ -8,6 +8,7 @@ Checking in with your mental health is so essential and often overlooked.
 Remember, seeking professional help is vital, and I am here to provide information and support to complement, not replace, the expertise of qualified mental health professionals.
 
 If you are in crisis or experiencing an emergency, please contact emergency services or a mental health helpline immediately.
+
 How are you feeling today?</p>`;
 
 const help = `<p>When in doubt, never be afraid to seek help.  
